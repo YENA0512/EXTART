@@ -1,7 +1,7 @@
 #result{
   display:none;
     background-color: whitesmoke;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 20px;
 
 }
@@ -9,8 +9,17 @@
   font-size:26px;
 }
 
-.resultDesc{
+.resultDesc1{
   font-size: 25px;
+  text-align: left;
+}
+.resultDesc2{
+  font-size: 25px;
+  text-align: left;
+}
+.resultDesc3{
+  font-size: 25px;
+  text-align: left;
 }
 
 .kakao{

@@ -6,18 +6,15 @@ const result = document.querySelector("#result");
 
 function calResult(){
   var pointArray = [
-    { name: 'mouse', value: 0, key: 0 },
-    { name: 'cow', value: 0, key: 1 },
-    { name: 'tiger', value: 0, key: 2 },
-    { name: 'rabbit', value: 0, key: 3 },
-    { name: 'dragon', value: 0, key: 4 },
-    { name: 'snake', value: 0, key: 5 },
-    { name: 'horse', value: 0, key: 6 },
-    { name: 'sheep', value: 0, key: 7 },
-    { name: 'monkey', value: 0, key: 8 },
-    { name: 'chick', value: 0, key: 9 },
-    { name: 'dog', value: 0, key: 10 },
-    { name: 'pig', value: 0, key: 11 },
+    { name: '수영', value: 0, key: 0 },
+    { name: '테니스', value: 0, key: 1 },
+    { name: '골프', value: 0, key: 2 },
+    { name: '복싱', value: 0, key: 3 },
+    { name: '축구', value: 0, key: 4 },
+    { name: '클라이밍', value: 0, key: 5 },
+    { name: '필라테스', value: 0, key: 6 },
+    { name: '크로스핏', value: 0, key: 7 },
+    { name: '요가', value: 0, key: 8 },
   ]
   for(let i = 0; i < endPoint; i++){
     var target = qnaList[i].a[select[i]];
@@ -46,16 +43,25 @@ function calResult(){
 function setResult(){
   let point = calResult();
   const resultName = document.querySelector('.resultname');
-  resultName.innerHTML = `당신에게 맞는 운동 종목은 + infoList[point].name + 입니다 `;
+  resultName.innerHTML = `<h1>당신에게 맞는 운동은 &nbsp&nbsp&nbsp<strong>` +  infoList[point].name + `</strong> &nbsp&nbsp&nbsp   입니다</h1>`;
   var resultImg = document.createElement('img');
+  const resultHashtagNum = 'hashtag' + (point+1);
+  console.log("'" + resultHashtagNum + "'");
+  //const resultHashtag = document.querySelector("'" + resultHashtagNum + "'");
+  //document.getElementById("'" + resultHashtagNum + "'").innerHTML;
+  //document.querySelector("'#" + resultHashtagNum+"'").innerHTML;
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = './img/image-' + point + '.png';
+  var imgURL = './img/image-' + point + '.jpg';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
   imgDiv.appendChild(resultImg);
-  const resultDesc = document.querySelector('.resultDesc');
-  resultDesc.innerHTML = infoList[point].desc;
+  const resultDesc1 = document.querySelector('.resultDesc1');
+  resultDesc1.innerHTML = infoList[point].desc1;
+  const resultDesc2 = document.querySelector('.resultDesc2');
+  resultDesc2.innerHTML += infoList[point].desc2;
+  const resultDesc3 = document.querySelector('.resultDesc3');
+  resultDesc3.innerHTML += infoList[point].desc3;
 }
 function goResult(){
   qna.style.WebkitAnimation = "fadeOut 1s";
