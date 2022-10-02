@@ -43,7 +43,7 @@ function calResult(){
 function setResult(){
   let point = calResult();
   const resultName = document.querySelector('.resultname');
-  resultName.innerHTML = `<h1>당신에게 맞는 운동은 &nbsp&nbsp&nbsp<strong>` +  infoList[point].name + `</strong> &nbsp&nbsp&nbsp   입니다</h1>`;
+  resultName.innerHTML = `<h1>당신에게 맞는 운동은 &nbsp&nbsp&nbsp<strong>` +  infoList[point].name + `</strong> &nbsp&nbsp&nbsp   입니다</h1><br>`;
   var resultImg = document.createElement('img');
   const resultHashtagNum = 'hashtag' + (point+1);
   console.log("'" + resultHashtagNum + "'");
@@ -115,8 +115,8 @@ function goNext(qIdx){
   for(let i in qnaList[qIdx].a){
     addAnswer(qnaList[qIdx].a[i].answer,qIdx,i);
   }
-  var status = document.querySelector('.statusBar');
-  status.style.width=(100/endPoint) * (qIdx+1) + '%';
+  // var status = document.querySelector('.statusBar');
+  // status.style.width=(100/endPoint) * (qIdx+1) + '%';
 }
 
 function begin(){

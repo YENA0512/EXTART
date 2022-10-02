@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/result.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Serif+KR&display=swap" rel="stylesheet">
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
@@ -39,7 +40,7 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt="..." /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ms-1"></i>
@@ -48,14 +49,14 @@
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                   <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="./test.html">Start Test</a></li>
-                  <li class="nav-item"><a class="nav-link" href="../detail.html">Detailed Info</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../detail.html">Detail Info</a></li>
                    
                 </ul>
             </div>
         </div>
       </nav>
 
-      <section id="main" class="page-section bg-light">
+      <section id="main" class="page-section">
         <div class="container">
           <div class="text-center">
               <h1>운동종목 추천테스트</h1>
@@ -66,7 +67,9 @@
                 운동 종목 추천 테스트를 시작하겠습니다! <br>
                 아래 시작하기 버튼을 누르세요
               </h3>
-              <button type="button" class="st-btn mt-5 btn btn-outline-danger" onclick="js:begin()">시작하기</button>
+              
+              <button type="button" class="mt-5 btn-xl btn-primary" onclick="js:begin()">시작하기</button>
+
             
           </div>
 
@@ -75,7 +78,7 @@
       </section>
 
 
-      <section id="qna" class="page-section bg-light">
+      <section id="qna" class="page-section">
         <div class="container">
           <div class="text-center">
             <div class="status mx-auto ">
@@ -92,7 +95,7 @@
         </div>
       </section>
 
-      <section id="result" class="page-section bg-light">
+      <section id="result" class="page-section">
         <div class="container">
           <div class="text-center">
             
@@ -123,31 +126,34 @@
               <br> -->
 
             <!-- <button type="button" onclick="js:kakaoShare()" class="kakao mt-3 py-2 px-3">공유하기</button> -->
-            <button type="button" onclick="js:kakaoShare()" class="kakao mt-3 py-2 px-3">더 알아보기</button>
+            <a href="../detail.html"><button type="button" class="kakao mt-3 py-2 px-3">더 알아보기</button></a>
+            <!-- <a class="btn btn-primary btn-xl text-uppercase" target=_blank href="start/test.html">테스트 하러가기</a> -->
+            <a href="test.html"><button type="button" class="kakao mt-3 py-2 px-3">다시하기</button></a>
 
           </div>
         </div>
       </section>
             
     </div>
-      <!-- Footer-->
-      <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
   </div>
+     <!-- Footer-->
+     <footer class="footer py-4">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-4 text-lg-start">Copyright &copy; EXTART 2022</div>
+              <div class="col-lg-4 my-3 my-lg-0">
+                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                  <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                  <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
       <script src="./js/data.js" charset="utf-8"></script>
       <script src="./js/start.js" charset="utf-8"></script>
       <script src="./js/share.js" charset="utf-8"></script>
