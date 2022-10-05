@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../MyMBTI-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "edit"
+	}
+}
