@@ -7,6 +7,8 @@
     <meta name="keywords" content="운동종목 추천테스트" />
     <meta name="description" content="운동종목 추천테스트" />
     <title>EXTART - 운동 종목 추천 서비스</title>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58650b299d586a00238bc074a1cf4bcb&libraries=services,clusterer"></script>
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -65,9 +67,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Detail Info</a>
+              <a class="nav-link" href="detail.html">Detail Info</a>
             </li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#services">Facilities</a></li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="geolocation.html">Facilities</a>
+          </li>
           </ul>
         </div>
       </div>
@@ -493,20 +497,16 @@
                   앓고 있는 사람<br />어깨질환이 있는 사람<br />허리질환이 있는
                   사람
                 </p>
+                
               </div>
+              <h3><a href="./geolocation/swim.html">주변 시설 보기</a></h3>
+        
+              
             </div>
-            <!-- 
-    
-                        <div class="row justify-content-center">
-                            <div class="col modal-font">
-    
-                                <h3>주변 시설 보기</h3>
-                                <br><br><br>
-    
-                            </div>
-                        </div> -->
 
             <div class="row justify-content-center">
+              
+
               <button
                 class="btn btn-primary btn-xl text-center text-uppercase"
                 data-bs-dismiss="modal"
@@ -609,6 +609,7 @@
                   됩니다. 따라서 하체와 상완부 위주로 스트레칭을 하도록 합니다.
                 </p>
               </div>
+              <h3><a href="./geolocation/tennis.html">주변 시설 보기</a></h3>
             </div>
             <div class="row justify-content-center">
               <button
@@ -707,6 +708,7 @@
 
                 <br /><br /><br />
               </div>
+              <h3><a href="./geolocation/golf.html">주변 시설 보기</a></h3>
             </div>
 
             <div class="row justify-content-center">
@@ -828,6 +830,7 @@
               </p>
 
               <br /><br /><br />
+              <h3><a href="./geolocation/boxing.html">주변 시설 보기</a></h3>
             </div>
 
             <div class="row justify-content-center">
@@ -897,6 +900,7 @@
                   돌입하지 말고 드리블, 패스, 슈팅 등의 기초기술 연습을 약
                   5분∼10분 정도 한 다음에 실시하도록 합니다.
                 </p>
+                <h3><a href="./geolocation/soccer.html">주변 시설 보기</a></h3>
               </div>
 
               <div class="col-6 pic">
@@ -906,6 +910,7 @@
                   alt="..."
                 />
               </div>
+
             </div>
 
             <div class="row justify-content-center">
@@ -1033,6 +1038,9 @@
                   괜찮은 경우가 있을 수 있으니 반드시 의사의 소견에 따라 운동의
                   여부를 결정하도록 하세요.
                 </p>
+              
+                </div>
+                <h3><a href="./geolocation/climbing.html">주변 시설 보기</a></h3>
               </div>
             </div>
 
@@ -1152,6 +1160,7 @@
                   걷는 연습을 하며, 걷는 것이 무리가 없다면 복근을 단련하는
                   필라테스 동작을 조금씩 시도할 수 있어요.
                 </p>
+                <h3><a href="./geolocation/pilates.html">주변 시설 보기</a></h3>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -1252,6 +1261,7 @@
                 허술한데 겨우 버티고 있는 중심마저 무너뜨리는 결과를 초래할 수
                 있어 피하는 것을 추천드립니다.
               </p>
+              <h3><a href="./geolocation/crossfit.html">주변 시설 보기</a></h3>
             </div>
 
             <div class="row justify-content-center">
@@ -1385,6 +1395,7 @@
                 휠자세도 비대칭적인 척추측만증 환자에게 무리가 오기 때문에
                 피하세요.
               </p>
+              <h3><a href="./geolocation/yoga.html">주변 시설 보기</a></h3>
             </div>
           
           <div class="row justify-content-center">
@@ -1403,14 +1414,12 @@
     </div>
 
     <!-- Bootstrap core JS-->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58650b299d586a00238bc074a1cf4bcb&libraries=services"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="./start/js/start.js" charset="utf-8"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="js/map.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
 </html>

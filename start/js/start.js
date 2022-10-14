@@ -42,6 +42,7 @@ function calResult(){
 }
 function setResult(){
   let point = calResult();
+  console.log(point);
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = `<h1>당신에게 맞는 운동은 &nbsp&nbsp&nbsp<strong>` +  infoList[point].name + `</strong> &nbsp&nbsp&nbsp   입니다</h1><br>`;
   var resultImg = document.createElement('img');
@@ -62,6 +63,7 @@ function setResult(){
   resultDesc2.innerHTML += infoList[point].desc2;
   const resultDesc3 = document.querySelector('.resultDesc3');
   resultDesc3.innerHTML += infoList[point].desc3;
+  return point+1;
 }
 function goResult(){
   qna.style.WebkitAnimation = "fadeOut 1s";
@@ -118,6 +120,13 @@ function goNext(qIdx){
   // var status = document.querySelector('.statusBar');
   // status.style.width=(100/endPoint) * (qIdx+1) + '%';
 }
+
+// document.getElementById("pageMove").onclick = function () {
+//   let point = setResult();
+//   location.href = "../detail.html/#portfolioModal" + String(point);
+//   console.log(location.href);
+// };
+
 
 function begin(){
   window.scrollTo(0, 0);
