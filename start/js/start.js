@@ -44,7 +44,7 @@ function setResult(){
   let point = calResult();
   console.log(point);
   const resultName = document.querySelector('.resultname');
-  resultName.innerHTML = `<h1>당신에게 맞는 운동은 &nbsp&nbsp&nbsp<strong>` +  infoList[point].name + `</strong> &nbsp&nbsp&nbsp   입니다</h1><br>`;
+  resultName.innerHTML = `<h1>당신에게 맞는 운동은 &nbsp&nbsp&nbsp<strong><span class="s1">` +  infoList[point].name + `</span></strong> &nbsp&nbsp&nbsp   입니다</h1><br>`;
   var resultImg = document.createElement('img');
   const resultHashtagNum = 'hashtag' + (point+1);
   console.log("'" + resultHashtagNum + "'");
@@ -55,7 +55,7 @@ function setResult(){
   var imgURL = './img/image-' + point + '.jpg';
   resultImg.src = imgURL;
   resultImg.alt = point;
-  resultImg.classList.add('img-fluid');
+  resultImg.classList.add('img-fluid2');
   imgDiv.appendChild(resultImg);
   const resultDesc1 = document.querySelector('.resultDesc1');
   resultDesc1.innerHTML = infoList[point].desc1;
@@ -66,15 +66,15 @@ function setResult(){
   return point+1;
 }
 function goResult(){
-  qna.style.WebkitAnimation = "fadeOut 1s";
-  qna.style.animation = "fadeOut 1s";
+  qna.style.WebkitAnimation = "fadeOut 0.5s";
+  qna.style.animation = "fadeOut 0.5s";
   setTimeout(() => {
     result.style.WebkitAnimation = "fadeIn 1s";
     result.style.animation = "fadeIn 1s";
     setTimeout(() => {
       qna.style.display = "none";
       result.style.display = "block";
-    }, 450)})
+    }, 0)})
 
     console.log(select);
     setResult();
@@ -130,16 +130,16 @@ function goNext(qIdx){
 
 function begin(){
   window.scrollTo(0, 0);
-  main.style.WebkitAnimation = "fadeOut 1s";
-  main.style.animation = "fadeOut 1s";
+  main.style.WebkitAnimation = "fadeOut 0.5s";
+  main.style.animation = "fadeOut 0.5s";
   setTimeout(() => {
-    qna.style.WebkitAnimation = "fadeIn 1s";
-    qna.style.animation = "fadeIn 1s";
+    qna.style.WebkitAnimation = "fadeIn 0.5s";
+    qna.style.animation = "fadeIn 0.5s";
     setTimeout(() => {
       main.style.display = "none";
       qna.style.display = "block";
-    }, 450)
+    }, 0)
     let qIdx = 0;
     goNext(qIdx);
-  }, 450);
+  }, 300);
 }

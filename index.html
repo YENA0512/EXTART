@@ -7,7 +7,10 @@
     <meta name="keywords" content="운동종목 추천테스트" />
     <meta name="description" content="운동종목 추천테스트" />
     <title>EXTART - 운동 종목 추천 서비스</title>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58650b299d586a00238bc074a1cf4bcb&libraries=services,clusterer"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58650b299d586a00238bc074a1cf4bcb&libraries=services,clusterer"
+    ></script>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -37,73 +40,68 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top" bgproperties="fixed">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top"
-          ><img src="assets/img/logo.png" alt="..."
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fas fa-bars ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="start/test.html"
-                >Start Test</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="detail.html">Detail Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="geolocation.html">Facilities</a>
-          </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <body id="page-top">
     <!-- Masthead-->
     <header class="masthead">
-      <div class="container">
-        <img class="img-fluid banner" src="assets/img/main.png" alt="..." />
-        <!-- <div class="masthead-subheading">누구나 운동을 시작할 수 있어요! 다치지 말고 건강하게 운동하자!<br>헬린이가 되고 싶은 이들을 위한 맞춤형 운동 종목 추천 사이트입니다</div> -->
-        <div class="masthead-heading text-uppercase bannertext">
-          나에게 맞는 운동은 무엇일까?
-        </div>
-        <a
-          class="btn btn-primary btn-xl text-uppercase bannerbtn"
-          target="_blank"
-          href="start/test.html"
-          >시작하기</a
-        >
+      <div class="slide">
+        <ul class="slide__list" style="padding-left:0px;">
+          <li class="slide__item" style="padding-left:0px;">
+            <img class="slide__image" src="./assets/img/main.png"  />
+          </li>
+          <li class="slide__item">
+            <img class="slide__image" src="./assets/img/main2.png"  />
+          </li>
+        </ul>
+        <div class="buttons"></div>
       </div>
+      <!-- Navigation-->
+      <div class="container-head1">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/img/logo.png" alt="..."
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0 mainnavlink">
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="start/test.html" >Start Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="detail.html">Detail Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="geolocation.html" >Facilities</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      
+      <div class="masthead-heading text-uppercase bannertext">
+        나에게 맞는 운동은 무엇일까?
+      </div>
+      <a
+        class="btn btn-primary btn-xl text-uppercase bannerbtn"
+        href="start/test.html"
+        >시작하기</a
+      >
     </header>
-    <!-- Services-->
-    <section class="page-section" id="services">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">서비스 소개</h2>
-          <img src="./assets/img/intro.png" class="img-fluid intro" alt="..." />
-          <!-- <h3 class="section-subheading text-muted">EXTART를 소개합니다!</h3> -->
-        </div>
-      </div>
-    </section>
-    <!-- Exercise Grid-->
-    <!-- bg-light -->
+   
     <section class="page-section" id="portfolio">
       <div class="container">
         <div class="text-center">
@@ -121,7 +119,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-4 col-sm-6">
             <!-- Exercise item 1-->
             <div class="portfolio-item">
               <a
@@ -129,11 +127,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal1"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/수영.jpg"
@@ -142,13 +136,10 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">수영</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Swimming
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-4 col-sm-6">
             <!-- Exercise item 2-->
             <div class="portfolio-item">
               <a
@@ -156,11 +147,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal2"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/테니스.jpg"
@@ -169,13 +156,10 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">테니스</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Tennis
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-4 col-sm-6">
             <!-- Exercise item 3-->
             <div class="portfolio-item">
               <a
@@ -183,11 +167,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal3"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/골프.jpg"
@@ -196,11 +176,10 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">골프</div>
-                <div class="portfolio-caption-subheading text-muted">Golf</div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-4 col-sm-6">
             <!-- Exercise item 4-->
             <div class="portfolio-item">
               <a
@@ -208,11 +187,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal4"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/복싱.jpg"
@@ -221,13 +196,10 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">복싱</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Boxing
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-4 col-sm-6">
             <!-- Exercise item 5-->
             <div class="portfolio-item">
               <a
@@ -235,11 +207,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal5"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/축구.jpg"
@@ -248,13 +216,10 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">축구</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Soccer
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-4 col-sm-6">
             <!-- Exercise item 6-->
             <div class="portfolio-item">
               <a
@@ -262,11 +227,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal6"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/클라이밍.jpg"
@@ -275,13 +236,10 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">클라이밍</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Climbing
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <div class="col-lg-4 col-sm-6 mb-lg-0">
             <!-- Exercise item 7-->
             <div class="portfolio-item">
               <a
@@ -289,11 +247,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal7"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/필라테스.jpg"
@@ -302,13 +256,10 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">필라테스</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Pilates
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+          <div class="col-lg-4 col-sm-6 mb-sm-0">
             <!-- Exercise item 8-->
             <div class="portfolio-item">
               <a
@@ -316,11 +267,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal8"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/크로스핏.jpg"
@@ -329,9 +276,6 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">크로스핏</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Crossfit
-                </div>
               </div>
             </div>
           </div>
@@ -343,11 +287,7 @@
                 data-bs-toggle="modal"
                 href="#portfolioModal9"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/sports/sports/요가.jpg"
@@ -356,7 +296,6 @@
               </a>
               <div class="portfolio-caption">
                 <div class="portfolio-caption-heading">요가</div>
-                <div class="portfolio-caption-subheading text-muted">Yoga</div>
               </div>
             </div>
           </div>
@@ -364,40 +303,28 @@
       </div>
     </section>
 
-    <!-- Footer-->
-    <footer class="footer py-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4 text-lg-start">Copyright &copy; EXTART 2022</div>
-          <div class="col-lg-4 my-3 my-lg-0">
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="#!"
-              aria-label="Twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="#!"
-              aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="#!"
-              aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+        <!-- Footer-->
+        <footer class="footer py-4">
+          <div class="container">
+            <div class="row align-items-center footerimg text-center">
+              <img src="../assets/img/logo3.png" style="width:auto; height:25px;">
+             
+            </div>
+            <hr>
+            <div class="row pb-3">
+              <div class="col-lg-2">
+                개발자 | 이예나 <br>
+                lmonari71@naver.com
+              </div>
+              <div class="col-lg-2">
+                디자이너 | 이승원 <br>
+                swlee58@icloud.com
+              </div>
+            </div>
+              
+            
           </div>
-          <div class="col-lg-4 text-lg-end">
-            <a class="link-dark text-decoration-none me-3" href="#!"
-              >Privacy Policy</a
-            >
-            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+        </footer>
     <!-- Portfolio Modals-->
     <!-- Portfolio item 1 modal popup-->
     <div
@@ -411,9 +338,6 @@
       <div class="modal-dialog modal-lg" role="document">
         <!-- <div class="modal-dialog"> -->
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <!-- <div class="container"> -->
           <div class="modal-body">
             <div class="row justify-content-center">
@@ -452,21 +376,16 @@
                 <p>
                   수영 동작 자체가 어깨의 회전 동작이 많기 때문에 어깨와 관련된
                   손상이 30% 이상입니다. 다음으로 킥 동작에서 유발되는 발목과
-                  종아리 손상도 그 비율이 상당히 높습니다.<br /><br />수영은
-                  대부분이 과사용에 의한 손상이기 때문에 자신에게 맞는 운동
-                  시간, 강도로 하는 것이 중요합니다. 또한 준비 운동을 통해
-                  체온과 근육의 온도를 상승시킨 후 천천히 몸을 물에 적셔 적응
-                  시간을 길게 갖도록 함으로써 심장과 혈압의 변화가 일어나지
-                  않도록 하는 것이 중요합니다.<br /><br />수영을 마친 후에도
-                  가벼운 체조로 마무리 운동을 하여 심박수 및 혈압이 서서히
-                  되돌아올 수 있도록 하여야 합니다.
+                  종아리 손상도 그 비율이 상당히 높습니다. 수영은 대부분이
+                  과사용에 의한 손상이기 때문에 자신에게 맞는 운동 시간, 강도로
+                  하는 것이 중요합니다.
                 </p>
               </div>
 
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
-                  src="assets/img/sports/sports/수영.jpg"
+                  class="img-fluid d-block my-3"
+                  src="assets/img/sports/sports/swim2.png"
                   alt="..."
                 />
               </div>
@@ -474,11 +393,9 @@
             <div class="row justify-content-center modal-font">
               <h3>부상을 예방하기 위한 팁</h3>
               <p>
-                팔이나 어깨, 다리 전체의 스트레칭이 중요합니다. 이 부위들은 물
-                속에서 앞으로 나가거나 균형을 잡는데 중요합니다. 다리의
-                스트레칭은 종아리에 근육경련이 일어 나는 것을 방지해주기도
-                합니다.<br />스트레칭<br />어깨 → 몸의 측면 → 다리 앞쪽 → 다리
-                뒤쪽 → 발목
+                준비 운동을 통해 체온과 근육의 온도를 상승시킨 후 천천히 몸을
+                물에 적셔 적응 시간을 길게 갖도록 함으로써 심장과 혈압의 변화가
+                일어나지 않도록 하는 것이 중요합니다.
               </p>
             </div>
             <div class="row justify-content-center">
@@ -497,24 +414,17 @@
                   앓고 있는 사람<br />어깨질환이 있는 사람<br />허리질환이 있는
                   사람
                 </p>
-                
               </div>
-              <h3><a href="./geolocation/swim.html">주변 시설 보기</a></h3>
-        
-              
+              <h3><a href="./geolocation/swim.html">운동 시설 찾기</a></h3>
             </div>
 
             <div class="row justify-content-center">
-              
-
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
                 data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
+                alt="Close modal"
+              />
             </div>
           </div>
         </div>
@@ -531,9 +441,6 @@
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <!-- Project details-->
@@ -581,8 +488,8 @@
 
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
-                  src="assets/img/sports/sports/테니스.jpg"
+                  class="img-fluid d-block my-3"
+                  src="assets/img/sports/sports/tennis2.png"
                   alt="..."
                 />
               </div>
@@ -609,17 +516,15 @@
                   됩니다. 따라서 하체와 상완부 위주로 스트레칭을 하도록 합니다.
                 </p>
               </div>
-              <h3><a href="./geolocation/tennis.html">주변 시설 보기</a></h3>
+              <h3><a href="./geolocation/tennis.html">운동 시설 찾기</a></h3>
             </div>
             <div class="row justify-content-center">
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
                 data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
+                alt="Close modal"
+              />
             </div>
           </div>
         </div>
@@ -635,9 +540,6 @@
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <!-- Project details-->
@@ -657,7 +559,7 @@
                 <h3>운동효과</h3>
                 <p>
                   골프는 대부분 걷기 위주의 유산소 운동형태이며, 심혈관계에
-                  무리가 가지 않는 낮은 강도의 운동이다. 이러한 골프 경기는
+                  무리가 가지 않는 낮은 강도의 운동입니다. 이러한 골프 경기는
                   대략적으로 4시간에 걸쳐서 10km의 거리를 샷을 병행하면서
                   이루어지기 때문에 심리적, 기술적, 체력적인 요소를 좋게 합니다.
                   <br />또한 연습장에서 1시간 이상 스윙 연습을 하는 것도 몸의
@@ -687,8 +589,8 @@
 
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
-                  src="assets/img/sports/sports/골프.jpg"
+                  class="img-fluid d-block my-3"
+                  src="assets/img/sports/sports/golf2.png"
                   alt="..."
                 />
               </div>
@@ -708,18 +610,16 @@
 
                 <br /><br /><br />
               </div>
-              <h3><a href="./geolocation/golf.html">주변 시설 보기</a></h3>
+              <h3><a href="./geolocation/golf.html">운동 시설 찾기</a></h3>
             </div>
 
             <div class="row justify-content-center">
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
                 data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
+                alt="Close modal"
+              />
             </div>
           </div>
         </div>
@@ -735,9 +635,6 @@
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <!-- Project details-->
@@ -771,7 +668,8 @@
                   복싱은 유산소 운동과 무산소 운동 효과를 동시에 누릴 수 있는
                   대표적인 운동입니다. 먼저 머리끝부터 발끝까지 전신을 이용해
                   뛰면서 산소를 소비해 체지방을 연소시키고, 칼로리를 소모하며,
-                  심폐기능을 강화할 수 있습니다. <br />
+                  심폐기능을 강화할 수 있습니다.<br />
+
                   복싱은 순간적인 힘을 필요로 하기때문에 근력을 향상시키고
                   쓸데없는 군살을 없애주며 탄력적인 몸매로 만들어줍니다. 보통
                   여성들이 잘 쓰지 않아 빼기 힘든 팔 안쪽 부분과 허벅지 안쪽의
@@ -779,29 +677,25 @@
                   운동하기 때문에 종아리 지방을 없애주고 '힙 업'에도 좋은 효과를
                   지니고, 운동 전후로 하는 스트레칭, 줄넘기, 팔 굽혀 펴기,
                   자전거 운동 등도 유산소와 근력 운동의 효과를 배가시킵니다.<br />
+
                   한편, 복싱의 숨겨진 건강 효과가 있는데 바로 샌드백에 주먹을
                   날리면서 얻는 스트레스 해소 효과입니다. 요즘 헬스클럽 등에서는
                   복싱에 에어로빅, 태권도 등을 접목한 태보 등을 하는데, 신나는
-                  음악에 맞춰하므로 재미까지 덤으로 얻을 수 있습니다. 운동 뿐만
-                  아니라 여성은 호신술의 기술을 습득 할 수 있는 기회이기도 해요.
-                  <br />
-                  복싱은 보통 30분 정도의 준비운동(발목 풀기, 무릎운동, 허리
-                  돌리기, 팔,목 돌리기, 달리기, 줄넘기)를 하고 본격적으로 한
-                  시간 정도 복싱을 한 뒤에 다시 마무리 운동(줄넘기, 자전거,
-                  마무리 스트레칭)을 20분간 한다. 권투의 기본 동작 중 팔을 뻗는
-                  잽스트레이트는 팔과 어깨를 쭉 뻗어 군살을 제거해 주고,
-                  위빙(상체를 좌우로 흔드는 동작)과 더킹(상체를 상하로 흔드는
-                  동작)동작은 복부, 허리, 허벅지 등의 군살 제거에 효과적이다.
-                  앞뒤로 발걸음을 재는 스텝 동작은 종아리 지방 제거에 탁월한
-                  효과가 있다. 몸을 좌우로 틀면서 한쪽 다리에 힘을 주고 반대쪽
-                  다리를 쭉 뻗는 동작인 사이드 런지는 허벅지 군살을 없애는데
-                  효과적이다.
+                  음악에 맞춰하므로 재미까지 덤으로 얻을 수 있습니다.<br />
+
+                  권투의 기본 동작 중 팔을 뻗는 잽스트레이트는 팔과 어깨를 쭉
+                  뻗어 군살을 제거해 주고, 위빙(상체를 좌우로 흔드는 동작)과
+                  더킹(상체를 상하로 흔드는 동작)동작은 복부, 허리, 허벅지 등의
+                  군살 제거에 효과적입니다. 앞뒤로 발걸음을 재는 스텝 동작은
+                  종아리 지방 제거에 탁월한 효과가 있습니다. 몸을 좌우로 틀면서
+                  한쪽 다리에 힘을 주고 반대쪽 다리를 쭉 뻗는 동작인 사이드
+                  런지는 허벅지 군살을 없애는데 효과적이기도 합니다.
                 </p>
               </div>
 
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
+                  class="img-fluid d-block my-3"
                   src="assets/img/sports/sports/복싱.jpg"
                   alt="..."
                 />
@@ -817,31 +711,29 @@
                 또 지구력과 근력을 강화한 뒤에 복싱에 입문하는 것이
                 바람직합니다.<br />운동을 시작하기 전에는 간단한 스트레칭 등으로
                 충분히 열을 내 굳어있는 몸과 관절의 긴장을 부드럽게 풀어줘야
-                한다.
+                합니다.
               </p>
               <h3>이런 분들에게 안 좋을 수 있어요!</h3>
               <p>
                 복싱은 손목과 손가락, 발목, 무릎 등에 부상이 잦은 운동이니만큼
                 조금이라도 통증이 느껴진다면 운동을 즉시 중단하고 병원을 찾는
-                것이 좋아요.<br />
+                것이 좋습니다.<br />
                 아울러 복싱은 상체보다는 하체, 특히 무릎과 발목에 부담을 주는
                 운동이므로 평소 운동량이 부족한 사람의 경우 자신의 체중으로 인해
-                무릎 관절에 부담을 줄 수 있어 주의가 필요해요.
+                무릎 관절에 부담을 줄 수 있어 주의가 필요합니다.
               </p>
 
               <br /><br /><br />
-              <h3><a href="./geolocation/boxing.html">주변 시설 보기</a></h3>
+              <h3><a href="./geolocation/boxing.html">운동 시설 찾기</a></h3>
             </div>
 
             <div class="row justify-content-center">
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
                 data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
+                alt="Close modal"
+              />
             </div>
           </div>
         </div>
@@ -858,9 +750,6 @@
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <!-- Project details-->
@@ -900,7 +789,7 @@
                   돌입하지 말고 드리블, 패스, 슈팅 등의 기초기술 연습을 약
                   5분∼10분 정도 한 다음에 실시하도록 합니다.
                 </p>
-                <h3><a href="./geolocation/soccer.html">주변 시설 보기</a></h3>
+                <h3><a href="./geolocation/soccer.html">운동 시설 찾기</a></h3>
               </div>
 
               <div class="col-6 pic">
@@ -910,18 +799,15 @@
                   alt="..."
                 />
               </div>
-
             </div>
 
             <div class="row justify-content-center">
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
                 data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
+                alt="Close modal"
+              />
             </div>
           </div>
         </div>
@@ -938,9 +824,6 @@
     >
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <!-- <div class="container"> -->
           <div class="modal-body">
             <div class="row justify-content-center">
@@ -959,40 +842,42 @@
             <div class="row modal-font">
               <div class="col-6">
                 <br />
+                <p>
+                  암벽등반은 등반 방식에 따라 인공 등반, 자유등반, 볼더링이
+                  있습니다. <br />이중에서 스포츠 클라이밍 또는 인공 등반은
+                  인공으로 만든 암벽을 등반하는 스포츠입니다.
+                  <br />인공암벽등반은 볼트와 같은 바위에 고정된 영구 확보물에
+                  안전을 맡기며 등반합니다. 인공암벽등반은 직접 확보물을
+                  설치해야 한다는 부담이 적기 때문에 힘과 지구력과 같은 육체적
+                  능력이 강조됩니다.
+                </p>
                 <h3>운동효과</h3>
                 <p>
-                  <strong>1 근력 강화 </strong><br />
+                  <strong>1. 근력 강화 </strong><br />
                   클라이밍을 할 때는 평소 잘 사용하지 않던 근육까지 사용하게
                   되어 몸을 균형 있게 발달시킬 수 있으며, 다양한 각도와 높이를
-                  오르내리기 때문에 상하지 근육이 발달한다. 클라이밍을 하다 보면
-                  특히 쥐는 힘이 강해지고 어깨 근육과 전완근, 이두근, 허벅지
-                  근육이 강화되는 것을 느낄 수 있다. 하이닥 운동상담 김명화
-                  운동전문가는 하이닥 건강 Q&A를 통해 "클라이밍은 전신 근육과
-                  균형감각 발달을 기대할 수 있는 좋은 운동이며, 특히 잡고
+                  오르내리기 때문에 상하지 근육이 발달합니다. 클라이밍은 전신
+                  근육과 균형감각 발달을 기대할 수 있는 좋은 운동이며, 특히 잡고
                   매달리는 동작이 많아 멋진 상체 근육을 만들 수 있을 것으로
-                  기대한다"고 말하기도 했다. <br /><br />
-                  <strong>2 집중력 향상</strong><br />
+                  기대한다"고 말하기도 했습니다. <br />
+                  <strong>2. 집중력 향상</strong><br />
                   클라이밍을 하다가 자칫 잘못하면 부상을 입거나 아래로 떨어질 수
-                  있기 때문에 고도의 집중력이 필요하다. 평소 집중을 잘하지
+                  있기 때문에 고도의 집중력이 필요합니다. 평소 집중을 잘하지
                   못하는 사람도 다음 단계로 나아가기 위해 경로를 탐색하고 손과
-                  발을 내딛다 보면 자연스럽게 집중하는 힘이 생길 것이다.
-                  <br /><br /><strong>3 스트레스 해소</strong><br />자신의
-                  한계에 도전하면서 목표 지점까지 도달하면 짜릿한 성취감을
-                  느끼고 자신감이 생긴다. 아직 숙련이 덜 되어 미끄러지고 발을
-                  헛디디는 순간에도 어딘가에 몰두하고 도전하는 느낌, 목표를 향해
-                  나아간다는 들뜬 마음은 평소에 받았던 스트레스를 잊게 만든다.
-                  <br />
+                  발을 내딛다 보면 자연스럽게 집중하는 힘이 생길 것입니다.
+                  <br /><strong>3. 스트레스 해소</strong><br />
+                  자신의 한계에 도전하면서 목표 지점까지 도달하면 짜릿한
+                  성취감을 느끼고 자신감이 생깁니다. <br />
                   이 외에도 클라이밍은 유연성 향상, 자신감 상승, 관절 운동 범위
-                  확대, 정신력 강화 등의 효과가 있다. 클라이밍을 즐기는 사람들은
-                  줄 하나에 몸을 의지해 맨손으로 목표 지점까지 ‘완등’했을 때의
-                  성취감을 이루어 말할 수 없다고 말한다.
+                  확대, 정신력 강화 등의 효과가 있습니다. 클라이밍을 즐기는
+                  사람들은 줄 하나에 몸을 의지해 맨손으로 목표 지점까지
+                  ‘완등’했을 때의 성취감을 이루어 말할 수 없다고 말합니다.
                 </p>
               </div>
-
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
-                  src="assets/img/sports/sports/클라이밍.jpg"
+                  class="img-fluid d-block my-3"
+                  src="assets/img/sports/sports/climbing2.png"
                   alt="..."
                 />
               </div>
@@ -1000,35 +885,26 @@
               <div class="row justify-content-center modal-font">
                 <h3>주의사항</h3>
                 <p>
-                  클라이밍은 내가 예상한 대로 몸이 움직여준다면 전혀 문제가 없는
-                  종목이다. 하지만 변수는 늘 존재할 수밖에 없는데, 욕심과 예상치
-                  못한 상황이 발생하는 경우이다. 사람은 모두 유연성 및 근력,
-                  근지구력 등 신체적인 조건이 다르다. 하지만 많은 사람이 다른
-                  사람들의 완등과 비교하거나 자신도 무조건 완등해야겠다는 목표를
-                  세우는 등 본인의 능력 이상으로 무리하기도 한다.
-                  <br />
+                  클라이밍은 내가 예상한 대로 몸이 움직여준다면 전혀 문제가
+                  없지만 예상치 못한 상황이 발생할 수도 있습니다. 사람은 모두
+                  유연성 및 근력, 근지구력 등 신체적인 조건이 다릅니다. 하지만
+                  많은 사람이 다른 사람들의 완등과 비교하거나 자신도 무조건
+                  완등해야겠다는 목표를 세우는 등 본인의 능력 이상으로 무리할 수
+                  있습니다.<br />
                   예를 들어, 손으로 홀드를 잡다가 갑자기 미끄러져서 떨어지는
                   경우, 혹은 양손으로 매달려있다가 한 손을 놓치면서 갑자기 한쪽
-                  팔로만 버텨야 하는 경우가 있다. 이럴 때는 어깨의 부상이 쉽게
-                  일어난다. 특히 우리 몸 중 가장 가동범위가 자유로운 어깨는
-                  갑자기 외부의 충격이 가해지면 크게 다칠 수 있다. 만약 어깨의
-                  안정성을 잡아주는 근육인 회전근개를 다치게 되면 어깨에
-                  고질적인 문제가 생길 수도 있다. <br />
-                  또한 발도 부상의 위험이 큰 부위이다. 발은 클라이밍을 할 때
-                  우리의 몸을 지지해주는 중요한 역할을 한다. 클라이밍화는 특성상
-                  아주 작게 신어야 하는데 신발의 압박으로 피로감이 많이 누적되고
-                  장기적으로는 발의 모양이 변형되기도 한다.
+                  팔로만 버텨야 하는 경우입니다. 이럴 때는 어깨의 부상이 쉽게
+                  일어납니다. 특히 우리 몸 중 가장 가동범위가 자유로운 어깨는
+                  갑자기 외부의 충격이 가해지면 크게 다칠 수 있습니다. 만약
+                  어깨의 안정성을 잡아주는 근육인 회전근개를 다치게 되면 어깨에
+                  고질적인 문제가 생길 수도 있습니다. 또한 발도 부상의 위험이 큰
+                  부위입니다. 클라이밍화는 특성상 아주 작게 신어야 하는데 신발의
+                  압박으로 피로감이 많이 누적되고 장기적으로는 발의 모양이
+                  변형될 수도 있습니다.
                 </p>
                 <h3>부상을 예방하기 위한 팁</h3>
                 <p>
-                  적절한 준비운동과 스트레칭을 통해 준비를 철저하게 해야한다.
-                  대부분 클라이밍을 잘하기 위해 턱걸이를 하거나 전완근을
-                  단련하기도 한다. 물론 근력과 근지구력을 키우는 것은 목표를
-                  성취하는데 좋은 조건이 된다. 하지만 클라이밍에 최적의 상태를
-                  위한 원동력은 가동범위가 충분히 나오는 유연함과 운동에
-                  최적화된 심박수 상태라 할 수 있다. <br />
-                  오랫동안 다양한 운동을 즐겨야 하는 시대에 가장 중요한 것은
-                  즐거움과 성취감보다 부상 없이 안전하게 운동하는 것이다.
+                  적절한 준비운동과 스트레칭을 통해 준비를 철저하게 해야합니다.
                 </p>
                 <h3>이런 분들에게 안 좋을 수 있어요</h3>
                 <p>
@@ -1036,24 +912,20 @@
                   관절염, 저혈압 등 대사성 질환이 있는 경우에는 스포츠클라이밍이
                   독이 될 수 있어요. 회복 여부나 질환에 정도에 따라 운동을 해도
                   괜찮은 경우가 있을 수 있으니 반드시 의사의 소견에 따라 운동의
-                  여부를 결정하도록 하세요.
+                  여부를 결정하도록 해야합니다.
                 </p>
-              
-                </div>
-                <h3><a href="./geolocation/climbing.html">주변 시설 보기</a></h3>
               </div>
+              <h3><a href="./geolocation/climbing.html">운동 시설 찾기</a></h3>
             </div>
+          </div>
 
-            <div class="row justify-content-center">
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
-                data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
-            </div>
+          <div class="row justify-content-center">
+            <img
+              src="assets/img/close.svg"
+              class="favbtn"
+              data-bs-dismiss="modal"
+              alt="Close modal"
+            />
           </div>
         </div>
       </div>
@@ -1069,9 +941,6 @@
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <!-- Project details-->
@@ -1099,42 +968,35 @@
                 </p>
                 <h3>운동효과</h3>
                 <p>
-                  <strong>1 코어를 강화한다 </strong><br />필라테스는
-                  신체운동중심인 파워 하우스(Power House)를 강조한다. 파워
+                  <strong>1. 코어를 강화한다 </strong><br />필라테스는
+                  신체운동중심인 파워 하우스(Power House)를 강조합니다. 파워
                   하우스는 흉곽의 바닥에서 앞쪽으로 고관절을 가로지르는 선까지,
                   뒤쪽으로는 둔부의 기저까지 이르는 부위로, 코어 근육이라
                   부르기도 한다. 필라테스에서는 기본적으로 이 부위를 단련할 수
-                  있는 동작으로 구성되어 있다. 이를 통해 몸의 중심이 강화되고
-                  유연해지면서 고관절이나 허리 통증을 완화하는 데도 도움이 된다.
-                  <br /><br />
-                  <strong>2 자세가 좋아진다</strong><br />
+                  있는 동작으로 구성되어 있습니다. 이를 통해 몸의 중심이
+                  강화되고 유연해지면서 고관절이나 허리 통증을 완화하는 데도
+                  도움이 됩니다.
+                  <br />
+                  <strong>2. 자세가 좋아진다</strong><br />
                   필라테스는 전신을 정렬시키고 근육의 균형에 초점을 맞춘다.
                   따라서 컴퓨터와 스마트폰 등을 자주 사용하고, 의자에 오랫동안
-                  앉아있는 생활을 많이 하는 현대인들의 자세 개선에 효과적이다.
-                  이 밖에도 하이닥 운동상담 정운경 운동전문가는 하이닥 Q&A에서
-                  “필라테스는 우리 몸의 움직임을 잘 만들어 줄 수 있는 대표적인
-                  운동”이라고 설명했다. 우리가 평소에 팔이나 다리를 움직일 때
-                  어깨와 엉덩이 관절을 잘 이용해야 하는데, 그러지 못하고 보상
-                  패턴으로 잘못 움직이면서 통증을 유발할 수 있다. 이 때 필라테스
-                  운동을 하면 잘못된 움직임을 교정해 올바르게 움직일 수 있도록
-                  도와주고, 이에 맞는 근육을 단련시켜준다.
-                  <br /><br /><strong>3 스트레스 해소</strong><br />
+                  앉아있는 생활을 많이 하는 현대인들의 자세 개선에 효과적입니다.
+                  우리가 평소에 팔이나 다리를 움직일 때 어깨와 엉덩이 관절을 잘
+                  이용해야 하는데, 보상 패턴으로 잘못 움직이면서 통증을 유발할
+                  수 있습니다. 이 때 필라테스 운동을 하면 잘못된 움직임을 교정해
+                  올바르게 움직일 수 있도록 도와주고, 이에 맞는 근육을
+                  단련시켜줍니다.
+                  <br /><strong>3. 스트레스가 해소된다</strong><br />
                   필라테스의 내적 집중을 하면서 호흡을 가다듬는 운동 방식은
                   신경계를 안정시키고 스트레스 호르몬인 코르티솔의 분비를
-                  낮춰준다. 필라테스 운동에 참여한 그룹과 참여하지 않은 그룹
-                  사이에 사회적 역할수행 및 자기신뢰도, 우울, 수면 장애 및 불안
-                  부분에서 유의미한 차이가 있는 것으로 나타났다. <br />
-                  이 외에도 클라이밍은 유연성 향상, 자신감 상승, 관절 운동 범위
-                  확대, 정신력 강화 등의 효과가 있다. 클라이밍을 즐기는 사람들은
-                  줄 하나에 몸을 의지해 맨손으로 목표 지점까지 ‘완등’했을 때의
-                  성취감을 이루어 말할 수 없다고 말한다.
+                  낮춰줍니다.
                 </p>
               </div>
 
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
-                  src="assets/img/sports/sports/필라테스.jpg"
+                  class="img-fluid d-block my-3"
+                  src="assets/img/sports/sports/pilates.png"
                   alt="..."
                 />
               </div>
@@ -1160,18 +1022,16 @@
                   걷는 연습을 하며, 걷는 것이 무리가 없다면 복근을 단련하는
                   필라테스 동작을 조금씩 시도할 수 있어요.
                 </p>
-                <h3><a href="./geolocation/pilates.html">주변 시설 보기</a></h3>
+                <h3><a href="./geolocation/pilates.html">운동 시설 찾기</a></h3>
               </div>
             </div>
             <div class="row justify-content-center">
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
                 data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
+                alt="Close modal"
+              />
             </div>
           </div>
         </div>
@@ -1188,9 +1048,6 @@
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <!-- Project details-->
@@ -1211,43 +1068,42 @@
                 <p>
                   크로스핏은 미국에서 시작한 운동으로 여러 종목을 번갈아 가며
                   훈련하는 운동 방식인 크로스 트레이닝(Cross Training)과 신체
-                  단련을 뜻하는 피트니스(Fitness)가 합쳐져 만들어진 말이다.
+                  단련을 뜻하는 피트니스(Fitness)가 합쳐져 만들어진 단어입니다.
+                  <br />
                   크로스핏은 고강도 운동이 섞인 프로그램인 ‘와드(WOD · Workout
                   Of the Day)’로 진행되며 스트레칭을 시작으로 웨이트 트레이닝,
                   맨몸운동, 윗몸 일으키기 등 전신을 활용한 운동을 1시간 정도
-                  진행한다.<br />
-                  크로스핏의 가장 큰 장점은 매일 운동 종류가 바뀌는 것이다.
-                  따라서 지루할 틈이 없고 다른 사람과 팀으로 구성되어 함께
-                  운동하기 때문에 동료애뿐만 아니라 경쟁의식으로 더욱 의지를
-                  다질 수 있다. 또한 1시간 동안 고강도의 운동을 한 후 자신의
-                  결과를 기록하는 운동 문화로 ‘성장감’과 ‘성취감’을 모두 얻을 수
-                  있다.
+                  진행됩니다.<br />
+                  크로스핏은 매일 운동 종류가 바뀌어 지루할 틈이 없고 다른
+                  사람과 팀으로 구성되어 함께 운동하기 때문에 동료애뿐만 아니라
+                  경쟁의식으로 더욱 의지를 다질 수 있습니다. 또한 1시간 동안
+                  고강도의 운동을 한 후 자신의 결과를 기록하는 운동 문화로
+                  ‘성장감’과 ‘성취감’을 모두 얻을 수 있습니다.
                 </p>
                 <h3>크로스핏의 고강도 운동 3가지</h3>
                 <p>
-                  <strong>풀업(Full Up) </strong><br />크로스핏 와드 프로그램 중
-                  한 운동 종목인 풀업은 턱걸이라고 생각하면 된다. 정자세로 하는
-                  것이 기본이나 반동을 주어 하는 방법도 있다. 풀업은 코어 근육을
-                  비롯하여 견갑골의 근육과 광배근을 키울 수 있다.<br />
+                  <strong>풀업(Full Up) </strong><br />크크로스핏 와드 프로그램
+                  중 한 운동 종목인 풀업은 턱걸이라고 생각하면 되는데요.
+                  정자세로 하는 것이 기본이나 반동을 주어 하는 방법도 있습니다.
+                  풀업을 통해 코어 근육을 비롯하여 견갑골의 근육과 광배근을 키울
+                  수 있습니다.<br />
                   <strong>에어 스쿼트(Air Squart)</strong><br />
                   ‘맨몸 스쿼트’인 에어 스쿼트는 엉덩이가 무릎보다 낮은
-                  위치까지만 앉았다 일어나는 기본적인 운동 자세이다. 에어
+                  위치까지만 앉았다 일어나는 기본적인 운동 자세입니다. 에어
                   스쿼트는 한 동작만으로 엉덩이와 허벅지 앞, 뒤쪽, 그리고
-                  코어에도 자극을 줄 수 있다.
+                  코어에도 자극을 줄 수 있습니다.
                   <br /><strong>버피 테스트(Burpee Test)</strong><br />
                   버피 테스트는 짧은 시간 안에 운동 효과를 극대화할 수 있는
-                  유산소성 근력 운동이다. 기존에 체력 측정을 목적으로 만들어진
-                  운동이나 전신 집중 운동으로 새롭게 주목받고 있다. 허리를 곧게
-                  펴고 상체를 숙인 뒤 바닥에 양손을 짚고 점프하듯 다리를 뒤로
-                  뻗은 후, 다시 한번에 다리를 앞쪽으로 점프한 뒤 일어서는 동작을
-                  반복하면 된다. <br />
+                  유산소성 근력 운동입니다. 허리를 곧게 펴고 상체를 숙인 뒤
+                  바닥에 양손을 짚고 점프하듯 다리를 뒤로 뻗은 후, 다시 한번에
+                  다리를 앞쪽으로 점프한 뒤 일어서는 동작을 반복합니다. <br />
                 </p>
               </div>
 
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
-                  src="assets/img/sports/sports/크로스핏.jpg"
+                  class="img-fluid d-block my-3"
+                  src="assets/img/sports/sports/crossfit2.png"
                   alt="..."
                 />
               </div>
@@ -1261,18 +1117,16 @@
                 허술한데 겨우 버티고 있는 중심마저 무너뜨리는 결과를 초래할 수
                 있어 피하는 것을 추천드립니다.
               </p>
-              <h3><a href="./geolocation/crossfit.html">주변 시설 보기</a></h3>
+              <h3><a href="./geolocation/crossfit.html">운동 시설 찾기</a></h3>
             </div>
 
             <div class="row justify-content-center">
-              <button
-                class="btn btn-primary btn-xl text-center text-uppercase"
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
                 data-bs-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-xmark me-1"></i>
-                Close
-              </button>
+                alt="Close modal"
+              />
             </div>
           </div>
         </div>
@@ -1289,9 +1143,6 @@
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
           <div class="modal-body">
             <div class="row justify-content-center">
               <!-- Project details-->
@@ -1338,7 +1189,7 @@
 
               <div class="col-6 pic">
                 <img
-                  class="img-fluid d-block mx-5 my-5"
+                  class="img-fluid d-block my-3"
                   src="assets/img/sports/sports/요가.jpg"
                   alt="..."
                 />
@@ -1395,26 +1246,27 @@
                 휠자세도 비대칭적인 척추측만증 환자에게 무리가 오기 때문에
                 피하세요.
               </p>
-              <h3><a href="./geolocation/yoga.html">주변 시설 보기</a></h3>
+              <h3><a href="./geolocation/yoga.html">운동 시설 찾기</a></h3>
             </div>
-          
-          <div class="row justify-content-center">
-            <button
-              class="btn btn-primary btn-xl text-center text-uppercase"
-              data-bs-dismiss="modal"
-              type="button"
-            >
-              <i class="fas fa-xmark me-1"></i>
-              Close
-            </button>
-          </div>
+
+            <div class="row justify-content-center">
+              <img
+                src="assets/img/close.svg"
+                class="favbtn"
+                data-bs-dismiss="modal"
+                alt="Close modal"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58650b299d586a00238bc074a1cf4bcb&libraries=services"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58650b299d586a00238bc074a1cf4bcb&libraries=services"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>

@@ -22,10 +22,10 @@
 }
 .answerList{
   background-color: #FFFFFF;
-  border-radius: 40px;
+  border-radius: 10px;
   display:block;
   width: 60%;
-  border: 1px solid #1D2EFF;
+  border: 3px solid #1D2EFF;
   color: #1D2EFF;
   font-family: 'Apple SD Gothic Neo';
   font-style: normal;

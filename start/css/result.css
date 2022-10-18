@@ -7,32 +7,43 @@
 
 }
 .resultname{
-  font-size:26px;
+  font-size:24px;
+  
 }
-
+h1{
+  font-size:30px;
+}
+.s1{
+  color: #1D2EFF;
+}
+h2 {
+  font-size:22px;
+}
 .resultDesc1{
-  font-size: 25px;
+  font-size: 16px;
   text-align: left;
 }
 .resultDesc2{
-  font-size: 25px;
+  font-size: 16px;
   text-align: left;
 }
 .resultDesc3{
-  font-size: 25px;
+  font-size: 16px;
   text-align: left;
 }
 
-.kakao{
+.testbtn{
   color:white;
-  background-color: #2d2904;
+  background-color: #1D2EFF;
   font-size: 20px;
-
+  font-weight:bold;
   border: 0px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
-.kakao:hover, .kakao:focus{
-  background-color:whitesmoke;
+/* .testbtn:hover{
+  background-color:white;
   color: #121001;
-}
+} */
+
+/* .testbtn:focus{ */
