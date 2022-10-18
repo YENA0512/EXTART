@@ -59,12 +59,12 @@ const handlePrev = () => {
     if (items.length > 1) {
       const prevButton = document.createElement('button');
       prevButton.classList.add('buttons__prev');
-      prevButton.innerHTML = '<img src="../assets/img/arrowL.png">';
+      prevButton.innerHTML = '<img src="./assets/img/arrowL.png">';
       prevButton.addEventListener('click', handlePrev);
   
       const nextButton = document.createElement('button');
       nextButton.classList.add('buttons__next');
-      nextButton.innerHTML = '<img src="../assets/img/arrowR.png">';
+      nextButton.innerHTML = '<img src="./assets/img/arrowR.png">';
       nextButton.addEventListener('click', handleNext);
   
       buttons.appendChild(prevButton);
