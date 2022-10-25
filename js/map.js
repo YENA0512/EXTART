@@ -168,9 +168,15 @@ function displayPlaces(places) {
     listEl.appendChild(fragment);
     menuEl.scrollTop = 0;
 
+   
+
     // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
     map.setBounds(bounds);
+
+
 }
+
+
 
 // 검색결과 항목을 Element로 반환하는 함수입니다
 function getListItem(index, places) {
@@ -195,6 +201,7 @@ function getListItem(index, places) {
 
     return el;
 }
+
 
 // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
 function addMarker(position, idx, title) {
@@ -226,35 +233,35 @@ function removeMarker() {
 }
 
 // 검색결과 목록 하단에 페이지번호를 표시는 함수입니다
-function displayPagination(pagination) {
-    var paginationEl = document.getElementById('pagination'),
-        fragment = document.createDocumentFragment(),
-        i; 
+// function displayPagination(pagination) {
+//     var paginationEl = document.getElementById('pagination'),
+//         fragment = document.createDocumentFragment(),
+//         i; 
 
-    // 기존에 추가된 페이지번호를 삭제합니다
-    while (paginationEl.hasChildNodes()) {
-        paginationEl.removeChild (paginationEl.lastChild);
-    }
+//     // 기존에 추가된 페이지번호를 삭제합니다
+//     while (paginationEl.hasChildNodes()) {
+//         paginationEl.removeChild (paginationEl.lastChild);
+//     }
 
-    for (i=1; i<=pagination.last; i++) {
-        var el = document.createElement('a');
-        el.href = "#";
-        el.innerHTML = i;
+//     for (i=1; i<=pagination.last; i++) {
+//         var el = document.createElement('a');
+//         el.href = "#";
+//         el.innerHTML = i;
 
-        if (i===pagination.current) {
-            el.className = 'on';
-        } else {
-            el.onclick = (function(i) {
-                return function() {
-                    pagination.gotoPage(i);
-                }
-            })(i);
-        }
+//         if (i===pagination.current) {
+//             el.className = 'on';
+//         } else {
+//             el.onclick = (function(i) {
+//                 return function() {
+//                     pagination.gotoPage(i);
+//                 }
+//             })(i);
+//         }
 
-        fragment.appendChild(el);
-    }
-    paginationEl.appendChild(fragment);
-}
+//         fragment.appendChild(el);
+//     }
+//     paginationEl.appendChild(fragment);
+// }
 
 // 검색결과 목록 또는 마커를 클릭했을 때 호출되는 함수입니다
 // 인포윈도우에 장소명을 표시합니다

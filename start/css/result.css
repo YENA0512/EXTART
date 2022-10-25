@@ -1,10 +1,10 @@
 #result{
   display:none;
-    background-color:#ffffff;
+    background-color:#000;
     /* text-align: center; */
     border-radius: 20px;
     padding: 10% 10%;
-
+    
 }
 .resultname{
   font-size:24px;
@@ -12,12 +12,15 @@
 }
 h1{
   font-size:30px;
+  font-family: 'Apple SD Gothic Neo';
+  color: #000;
 }
 .s1{
   color: #1D2EFF;
 }
 h2 {
   font-size:22px;
+  font-family: 'Apple SD Gothic Neo';
 }
 .resultDesc1{
   font-size: 16px;

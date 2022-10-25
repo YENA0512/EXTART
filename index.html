@@ -13,7 +13,7 @@
     ></script>
 
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/icon2.png" />
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
@@ -55,55 +55,48 @@
         <div class="buttons"></div>
       </div>
       <!-- Navigation-->
-      <div class="container container-head1">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-          <a class="navbar-brand me-2" href="index.html"
-            ><img src="assets/img/logo2.png" alt="..."
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            Menu
-            <i class="fas fa-bars ms-1"></i>
-          </button>
-          <div class="ms-5 collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-5 py-4 py-lg-0 mainnavlink">
+      <div class="container-head1">
+      
+        <nav class="navbar navbar-expand navabar-expand-md navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+          
+          <div class="navbar-brand"><a href="index.html"
+            ><img src="assets/img/LOGO1.png" alt="..."
+          /></a></div>
+         
+          <div class="navText collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav me-0 py-4 py-lg-0">
               <li class="nav-item ">
-                <a class="nav-link" href="about.html">서비스 소개</a>
+                <a class="nav-link" href="about.html" style="color:#1FFF79">서비스 소개</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="start/test.html" >운동 추천받기</a>
+                <a class="nav-link" href="start/test.html" style="color:#1FFF79">운동 추천받기</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="detail.html">운동 알아보기</a>
+                <a class="nav-link" href="detail.html" style="color:#1FFF79">운동 알아보기</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="geolocation.html" >시설 알아보기</a>
+                <a class="nav-link" href="geolocation.html" style="color:#1FFF79" >시설 알아보기</a>
               </li>
             </ul>
           </div>
+        
         </nav>
       </div>
-
+    
       
       <div class="masthead-heading text-uppercase bannertext">
         나에게 맞는 운동은 무엇일까?
       </div>
       <a
-        class="btn btn-primary btn-xl text-uppercase bannerbtn"
+        class="btn btn-xl text-uppercase bannerbtn"
         href="start/test.html"
-        >시작하기</a
+        >테스트 바로가기</a
       >
+    
     </header>
    
     <section class="page-section" id="portfolio">
-      <div class="container">
+      <div class="container-head2">
         <div class="text-center">
           <div class="row text-center">
             <div class="col-lg-10 col-sm-10 mb-10">
@@ -111,11 +104,11 @@
                 운동 종목에 대해 알아보자
               </h2>
             </div>
-            <div class="arrow section-heading col-lg-2 col-sm-2 mb-2">
+            <!-- <div class="arrow section-heading col-lg-2 col-sm-2 mb-2">
               <a href="detail.html"
                 ><i class="fa fa-arrow-right fa-3x" aria-hidden="true"></i
               ></a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="row">
@@ -305,25 +298,31 @@
 
         <!-- Footer-->
         <footer class="footer py-4">
-          <div class="container">
-            <div class="row align-items-center footerimg text-center">
-              <img src="./assets/img/logo3.png" style="width:auto; height:25px;">
+  
+            <div class="row ">
+              <div class="col-lg-4">
+                <h4>Contact Us</h4>
+                <div class="row">
+                  <div class="col-lg-4">
+                    개발자 | 이예나 <br>
+                    디자이너 | 이승원
+                  </div>
+                  <div class="col-lg-8">
+                    lmonari71@naver.com<br>
+                    swlee58@icloud.com
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="col-lg-4 text-center align-items-center">
+                <img src="./assets/img/logo3.png" style="width:auto; height:25px;">
+              </div>
+              <div class="col-lg-4"></div>
+              
              
             </div>
-            <hr>
-            <div class="row pb-3">
-              <div class="col-lg-2">
-                개발자 | 이예나 <br>
-                lmonari71@naver.com
-              </div>
-              <div class="col-lg-2">
-                디자이너 | 이승원 <br>
-                swlee58@icloud.com
-              </div>
-            </div>
-              
             
-          </div>
         </footer>
     <!-- Portfolio Modals-->
     <!-- Portfolio item 1 modal popup-->
@@ -342,7 +341,7 @@
           <div class="modal-body">
             <div class="row justify-content-center">
               <h2 class="text-uppercase">수영</h2>
-              <p class="item-intro text-muted">Swimming</p>
+              
               <div class="row" id="hashtag1">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#고강도</div>
@@ -380,24 +379,24 @@
                   과사용에 의한 손상이기 때문에 자신에게 맞는 운동 시간, 강도로
                   하는 것이 중요합니다.
                 </p>
-              </div>
-
-              <div class="col-6 pic">
-                <img
-                  class="img-fluid d-block my-3"
-                  src="assets/img/sports/sports/swim2.png"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <div class="row justify-content-center modal-font">
-              <h3>부상을 예방하기 위한 팁</h3>
+                <h3>부상을 예방하기 위한 팁</h3>
               <p>
                 준비 운동을 통해 체온과 근육의 온도를 상승시킨 후 천천히 몸을
                 물에 적셔 적응 시간을 길게 갖도록 함으로써 심장과 혈압의 변화가
                 일어나지 않도록 하는 것이 중요합니다.
               </p>
+              </div>
+
+              <div class="col-6 pic">
+                <br>
+                <img
+                  class="img-fluid d-block"
+                  src="assets/img/sports/sports/swim2.png"
+                  alt="..."
+                />
+              </div>
             </div>
+           
             <div class="row justify-content-center">
               <div class="col-6 modal-font">
                 <h3>이런 분들에게 추천해요!</h3>
@@ -445,7 +444,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">테니스</h2>
-              <p class="item-intro text-muted">Tennis</p>
+              
               <div class="row" id="hashtag2">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#고강도</div>
@@ -487,8 +486,9 @@
               </div>
 
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block my-3"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/tennis2.png"
                   alt="..."
                 />
@@ -544,7 +544,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">골프</h2>
-              <p class="item-intro text-muted">Golf</p>
+             
               <div class="row" id="hashtag3">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#저강도</div>
@@ -588,8 +588,9 @@
               </div>
 
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block my-3"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/golf2.png"
                   alt="..."
                 />
@@ -639,7 +640,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">복싱</h2>
-              <p class="item-intro text-muted">Boxing</p>
+             
               <div class="row" id="hashtag4">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#고강도</div>
@@ -683,19 +684,20 @@
                   복싱에 에어로빅, 태권도 등을 접목한 태보 등을 하는데, 신나는
                   음악에 맞춰하므로 재미까지 덤으로 얻을 수 있습니다.<br />
 
-                  권투의 기본 동작 중 팔을 뻗는 잽스트레이트는 팔과 어깨를 쭉
+                  <!-- 권투의 기본 동작 중 팔을 뻗는 잽스트레이트는 팔과 어깨를 쭉
                   뻗어 군살을 제거해 주고, 위빙(상체를 좌우로 흔드는 동작)과
                   더킹(상체를 상하로 흔드는 동작)동작은 복부, 허리, 허벅지 등의
                   군살 제거에 효과적입니다. 앞뒤로 발걸음을 재는 스텝 동작은
                   종아리 지방 제거에 탁월한 효과가 있습니다. 몸을 좌우로 틀면서
                   한쪽 다리에 힘을 주고 반대쪽 다리를 쭉 뻗는 동작인 사이드
-                  런지는 허벅지 군살을 없애는데 효과적이기도 합니다.
+                  런지는 허벅지 군살을 없애는데 효과적이기도 합니다. -->
                 </p>
               </div>
 
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block my-3"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/복싱.jpg"
                   alt="..."
                 />
@@ -754,7 +756,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">축구</h2>
-              <p class="item-intro text-muted">Soccer</p>
+              
               <div class="row" id="hashtag5">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#고강도</div>
@@ -793,8 +795,9 @@
               </div>
 
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block mx-5 my-5"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/축구.jpg"
                   alt="..."
                 />
@@ -829,7 +832,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">클라이밍</h2>
-              <p class="item-intro text-muted">Climbing</p>
+             
               <div class="row" id="hashtag6">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#고강도</div>
@@ -875,8 +878,9 @@
                 </p>
               </div>
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block my-3"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/climbing2.png"
                   alt="..."
                 />
@@ -945,7 +949,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">필라테스</h2>
-              <p class="item-intro text-muted">Pilates</p>
+              
               <div class="row" id="hashtag7">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#중강도</div>
@@ -994,8 +998,9 @@
               </div>
 
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block my-3"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/pilates.png"
                   alt="..."
                 />
@@ -1052,7 +1057,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">크로스핏</h2>
-              <p class="item-intro text-muted">Crossfit</p>
+              
               <div class="row" id="hashtag8">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#고강도</div>
@@ -1101,8 +1106,9 @@
               </div>
 
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block my-3"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/crossfit2.png"
                   alt="..."
                 />
@@ -1147,7 +1153,7 @@
             <div class="row justify-content-center">
               <!-- Project details-->
               <h2 class="text-uppercase">요가</h2>
-              <p class="item-intro text-muted">Yoga</p>
+              
               <div class="row" id="hashtag9">
                 <div class="col align-items-center my-3 my-lg-0">
                   <div class="hashtag">#고강도</div>
@@ -1188,8 +1194,9 @@
               </div>
 
               <div class="col-6 pic">
+                <br>
                 <img
-                  class="img-fluid d-block my-3"
+                  class="img-fluid d-block"
                   src="assets/img/sports/sports/요가.jpg"
                   alt="..."
                 />

@@ -91,7 +91,7 @@ const autoplayIterator = () => {
         selected = 0;
         setTransition('');
         setTranslate({ reset: true });
-        autoplay({ duration: 6000 });
+        autoplay({ duration: 8000 });
       }, 1000);
     }
   };
@@ -101,8 +101,8 @@ const autoplayIterator = () => {
   };
 
   const render = () => {
-    makeButton();
+    // makeButton();
     cloneElement();
-    autoplay({ duration: 6000 });
+    autoplay({ duration: 8000 });
   };
   render();

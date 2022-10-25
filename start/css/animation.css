@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
@@ -22,4 +22,4 @@
 .fadeOut{
   animation:fadeOut;
   animation-duration: :0.5s;
-}
+} */
