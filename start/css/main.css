@@ -63,7 +63,7 @@ html, body {
   font-family:'BM JUA_OTF';
   background-color: #17FF75;;
   color:#FFFFFF;
-  border-color:#17FF75;;
+  /* border-color:#17FF75;; */
 }
 .st-btn {
   font-family: 'Apple SD Gothic Neo';

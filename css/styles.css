@@ -77,6 +77,7 @@
 }
 
 body {
+  
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -116,6 +117,18 @@ h1, .h1 {
   h1, .h1 {
     font-size: 2.5rem;
   }
+}
+@media (min-width: 500px) {
+  h1, .h1 {
+    font-size: 1.5rem;
+  }
+  .masthead-heading {
+    font-size: calc(1.3rem + 0.6vw);
+    position:absolute;
+    top:10%;
+    
+  }
+  
 }
 
 h2, .h2 {
@@ -612,10 +625,11 @@ progress {
 }
 
 .img-fluid {
-  width: 100%;
-  height: 20rem;
+  width:100%;
+  height: 21rem;
   margin-left:0px;
   margin-right:0px;
+  padding:1px;
   /* border-radius: 20px; */
 }
 .img-fluid2 {
@@ -690,10 +704,12 @@ progress {
 } 
 .container-head2 {
   margin: 0 auto;
-  padding:3rem 5rem;
+  padding:3rem 7.7%;
   border-radius: 20px;
   color:#000;
   background-color: #FFFFFF;
+  margin-left:5%;
+  margin-right:5%;
 }
 .container-head3 {
    margin: 0 12.7%;
@@ -703,9 +719,19 @@ progress {
   height: 80vh;
   
 }
+.container-head2_1 {
+  margin: 0 auto;
+  padding:3rem 0;
+  border-radius: 20px;
+  color:#000;
+  margin-left:12.7%;
+  margin-right:12.7%;
+ 
+}
+
 .geolocation {
   margin-top:10rem;
-  padding:12% 0;
+  padding:14% 0;
 }
 .container-head2 > .section-heading{
   color:#000;
@@ -3125,6 +3151,9 @@ textarea.form-control-lg {
   color:#1D2EFF;
   border-color:#ffffff;
 }
+.test > .btn:hover{
+  color:#FFFFFF;
+}
 
 .btn {
   display: inline-block;
@@ -4098,10 +4127,11 @@ textarea.form-control-lg {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0px 1rem;
   color: #ffc800;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  vertical-align: baseline;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -4215,8 +4245,9 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   /* align-items: center; */
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  vertical-align: text-bottom;
+  padding-top: 1rem;
+  /* padding-bottom: 0.5rem; */
   float:right;
   position: relative;
   right:0px;
@@ -4235,8 +4266,8 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   /* margin-right: 5rem; */
   font-size: 1.25rem;
   text-decoration: none;
@@ -5690,11 +5721,11 @@ textarea.form-control-lg {
 }
 
 .modal-dialog {
-  position: absolute;
+  position: relative;
   left:15%;
   right:15%;
   
-  width:80%;
+  min-width: 1080px;
  
   pointer-events: none;
   overflow-y: initial !important;
@@ -11537,7 +11568,7 @@ p {
 }
 #portfolio {
   background-color: #000;
-  padding: 5%;
+  padding: 5% 0;
 }
 
 
@@ -11873,10 +11904,10 @@ header.masthead .masthead-heading {
 }
 
 @media (min-width: 768px) {
-  /* header.masthead {
+   /* header.masthead {
     padding-top: 17rem; 
      padding-bottom: 12.5rem;
-  } */
+  }  */
   header.masthead .masthead-subheading {
     font-size: 1.5rem;
     font-style: italic;
@@ -11893,10 +11924,14 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item {
   max-width:100%;
-  height:24rem;
+  /* height:24rem; */
   padding:1%;
   margin-left: 1%;
   margin-right: 1%; 
+}
+.detail .portfolio-item {
+  background-color: #000 !important;
+  color:#FFFFFF;
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -11906,8 +11941,8 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
-  width: 100%;
-  height: 20rem;
+  max-width: 100%;
+  height: 430px;
   /* background: #ffffff; */
   align-items: center;
   justify-content: center;
@@ -11944,7 +11979,9 @@ header.masthead .masthead-heading {
 .portfolio-caption .portfolio-caption-heading {
   text-align:left;
   font-size:10px;
-  margin-top:15px;
+  margin-top:10px;
+  
+  padding-bottom:15px;
   font-family:'Apple SD Gothic Neo';
   /* padding: 1.5rem; */
 }
@@ -11967,7 +12004,7 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .modal-content {
   padding-top: 3rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   padding-left:7rem;
   padding-right:6rem;
 
@@ -12268,12 +12305,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 /*map style*/
 #map {
-  width:60%;
+   width:70%;
   height:100%;
   /* margin-bottom: 20%; */
-  margin-left: 20%;
-  margin-right:20%;
-  margin-top:5%;
+  /* margin-left: 10rem;
+  margin-right:10rem; */
+  /* margin-top:5%; */
+  margin: 3rem 15%;
   position:relative;
   overflow:hidden;
 }
@@ -12283,7 +12321,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 #menu_wrap {   
   font-family:'Apple SD Gothic Neo';font-size:10px;
   color:#000;
-  margin:50px 10px 100px 10px;padding:5px;
+  margin:80px 0px;padding:5px;
 
   /* height: 300px; */
   /* position:absolute;top:0;right:20px;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto; */
@@ -12332,7 +12370,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding-left:0px;
 }
 #navi > h3 {
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   font-family:'Apple SD Gothic Neo';
   color:#FFFFFF;
 }
@@ -12344,10 +12382,12 @@ li.group{
   height:35px;
   line-height:35px;
   cursor:pointer;
+  margin-bottom:10px;
   /* padding:15px; */
 }
 li.group a  {
   display: block;
+ 
   width: 100%;
   height:100%;
   text-decoration:none;
