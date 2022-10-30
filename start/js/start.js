@@ -84,8 +84,9 @@ function addAnswer(answerText,qIdx,idx){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
   answer.classList.add('answerList');
-  answer.classList.add('my-5');
-  answer.classList.add('py-4');
+  answer.style.marginBottom = '54px';
+   //answer.classList.add('style:"margin-bottom:54px";');
+  // answer.classList.add('py-4');
   answer.classList.add('mx-auto');
   answer.classList.add('fadeIn');
   a.appendChild(answer);
@@ -113,6 +114,8 @@ function goNext(qIdx){
     return;
   }
   var q = document.querySelector('.qBox');
+  q.style.marginLeft = 'auto';
+  q.style.marginRight = 'auto';
   q.innerHTML = qnaList[qIdx].q;
   for(let i in qnaList[qIdx].a){
     addAnswer(qnaList[qIdx].a[i].answer,qIdx,i);
