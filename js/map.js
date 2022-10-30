@@ -60,7 +60,7 @@ function searchPlaces() {
         var locPosition = new kakao.maps.LatLng(lat, lon)
     // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
     ps.keywordSearch(keyword, placesSearchCB, 
-        {useMapBounds:false,page:1, radius:20000,location: locPosition,
+        {useMapBounds:false,page:1, radius:5000,location: locPosition,
             sort:kakao.maps.services.SortBy.distance})
     });
     
@@ -232,36 +232,6 @@ function removeMarker() {
     markers = [];
 }
 
-// 검색결과 목록 하단에 페이지번호를 표시는 함수입니다
-// function displayPagination(pagination) {
-//     var paginationEl = document.getElementById('pagination'),
-//         fragment = document.createDocumentFragment(),
-//         i; 
-
-//     // 기존에 추가된 페이지번호를 삭제합니다
-//     while (paginationEl.hasChildNodes()) {
-//         paginationEl.removeChild (paginationEl.lastChild);
-//     }
-
-//     for (i=1; i<=pagination.last; i++) {
-//         var el = document.createElement('a');
-//         el.href = "#";
-//         el.innerHTML = i;
-
-//         if (i===pagination.current) {
-//             el.className = 'on';
-//         } else {
-//             el.onclick = (function(i) {
-//                 return function() {
-//                     pagination.gotoPage(i);
-//                 }
-//             })(i);
-//         }
-
-//         fragment.appendChild(el);
-//     }
-//     paginationEl.appendChild(fragment);
-// }
 
 // 검색결과 목록 또는 마커를 클릭했을 때 호출되는 함수입니다
 // 인포윈도우에 장소명을 표시합니다
