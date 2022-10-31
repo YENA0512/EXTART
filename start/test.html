@@ -36,13 +36,14 @@
   </head>
   <body style="position: relative;
   width: 1920px;
-  height: 1080px;
+  height:1080px;
   background: #FFFFFF;">
-    <div class="bannerimg" style="position: absolute;
+    <div class="bannerimg" style="position: relative;
     width: 1920px;
-    height: 1080px;
+   min-height:100%;
     left: 0px;
     top: 0px;
+    padding-bottom:218px;
     background: #000000;">
       <!-- Navigation-->
       <div class="container-head1" style="position: absolute;
@@ -116,7 +117,9 @@
       </div>
     
        
-    <div id="bodywrapper">
+    <div id="bodywrapper" style="min-height:100%;
+    position:relative;
+    padding-bottom:218px;">
       <div id="body-content">
         
       
@@ -124,26 +127,46 @@
       <section id="main" class="page-section">
         
           <div class="text-center test">
-              <h1 style="position: absolute;
-              left: 28.49%;
-              right: 27.92%;
-              top: 34.17%;
-              bottom: 54.45%;
+              <h2 style="position: absolute;
+              left: 45.47%;
+              right: 45.47%;
+              top: 25.93%;
+              bottom: 70.19%;
               
-              font-family: 'BM DoHyeon OTF';
+              font-family: 'Shilla_Gothic-Bold';
               font-style: normal;
-              font-weight: 400;
-              font-size: 47px;
-              line-height: 58px;
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 42px;
               text-align: center;
               text-transform: capitalize;
               
-              color: #17FF75;">운동종목 추천 테스트</h1>
-
-              <!-- <img src="../assets/img/testimg.png" width="350px" style="text-align: center;">
-              <br> -->
+              color: #FFFFFF;">운동 추천받기</h2>
+              <h1 style="position: absolute;
+              left: 31.67%;
+              right: 31.67%;
+              top: 32.04%;
+              bottom: 61.85%;
               
-              <button class="mt-5 btn-xl btn stbtn" onclick="js:begin()">시작하기</button>
+              font-family: 'Shilla_Gothic-Bold';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 50px;
+              line-height: 66px;
+              text-align: center;
+              letter-spacing: 0.02em;
+              text-transform: capitalize;
+              
+              color: #1FFF79;">나에게 맞는 운동 종목은 무엇일까?</h1>
+
+              <img src="../assets/testimg.png" style="position: absolute;
+              width: 500px;
+              height: 500px;
+              left: 710px;
+              top: 382px;">
+              
+              
+              <button class="btn-xl btn stbtn" onclick="js:begin()">시작하기</button>
 
             
           </div>
@@ -166,154 +189,145 @@
       </section>
 
       <section id="result" class="page-section">
-        <div class="container-head2 mt-5 pt-5">
+        <!-- <div class="container-head2 mt-5 pt-5">-->
           <div class="text-center">
-            
+             
               <div class="resultname">
 
               </div>
-              <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+              <div id="resultImg">
 
               </div>
-              <div class="resultDesc1">
-
+              <div class="resultDesc">
+              <!-- <div class="resultDesc1">
               </div> 
               <div class="resultDesc2">
-                <br><h2> 주의 사항</h2>
-
+                <br>
               </div> 
               <div class="resultDesc3">
-                <br><h2> 부상을 예방하기 위한 팁</h2>
-              </div> 
-              <!-- <h2> 종목 소개</h2>
-              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <br>
+              </div>  -->
               <br>
-              <h2> 주의 사항</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis, deserunt eaque tempora sint odit harum corporis sapiente quas cumque commodi delectus similique, reprehenderit ipsam aut? Quo minus est officiis.</p>
-              <br>
-              <h2> 부상을 예방하기 위한 팁</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti magnam perferendis, veritatis iusto incidunt molestias vitae! Dolore explicabo neque quis ut, placeat obcaecati temporibus! Impedit, ratione. Ea qui tempore labore?</p>
-              <br> -->
-
              
-            <a href="../detail.html"><button type="button" id="pageMove" class="testbtn text-center mt-5 py-2 px-3 mx-1">더 알아보기</button></a>
+            <button type="button" id="pageMove" onclick="location.href='../detail.html'" class="testbtn text-center py-2 px-3 mx-1">더 알아보기</button>
             <br>
-            <a href="test.html"><img src="../assets/img/Frame.png" class="mt-5 py-2 px-3 mx-1" width="100px;"></button></a>
-            
-
+            <button type="button" onclick="location.href='test.html'" class="resetbtn"><img src="../assets/img/Frame.png"></button>
           </div>
-        </div>
+<!-- 
+          </div>-->
+        </div> 
       </section>
-            
     </div>
-  </div>
-</div>
-               <!-- Footer-->
-               <footer class="footer py-4" style="position: absolute;width:1920px;height:218px;top:1080px;left:0px;">
   
-                <div class="row ">
-                  <div class="col-lg-4">
-                    <h4 style="position: absolute;
-                    width: 97px;
-                    height: 24px;
-                    top:37px;
-                    left:223px;
-                    
-                    font-family: 'Apple SD Gothic Neo';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 24px;
-                    /* identical to box height */
-                    
-                    text-transform: capitalize;
-                    
-                    color: #000000;">Contact Us</h4>
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p style="position: absolute;
-                        width: 113px;
-                        height: 19px;
-                        top:83px;
-                        left:223px;
-                        
-                        font-family: 'Apple SD Gothic Neo';
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 16px;
-                        line-height: 19px;
-                        text-transform: capitalize;
-                        
-                        color: #000000;">개발자 | 이예나</p> <br>
-                        <p style="position: absolute;
-                        width: 118px;
-                        height: 19px;
-                        left: 223px;
-                        top: 124px;
-                        
-                        font-family: 'Apple SD Gothic Neo';
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 16px;
-                        line-height: 19px;
-                        text-transform: capitalize;
-                        
-                        color: #000000;
-                        ">디자이너 | 이승원</p>
-                      </div>
-                      <div class="col-lg-8">
-                        <p style="position: absolute;
-                        width: 180px;
-                        height: 24px;
-                        left: 379px;
-                        top: 83px;
-                        
-                        font-family: 'Apple SD Gothic Neo';
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 20px;
-                        line-height: 24px;
-                        /* identical to box height */
-                        
-                        text-transform: lowercase;
-                        
-                        color: #000000;">lmonari71@naver.com</p><br>
-                        <p style="position: absolute;
-                        width: 175px;
-                        height: 24px;
-                        left: 379px;
-                        top: 120px;
-                        
-                        font-family: 'Apple SD Gothic Neo';
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 20px;
-                        line-height: 24px;
-                        /* identical to box height */
-                        
-                        text-transform: lowercase;
-                        
-                        color: #000000;
-                        ">swlee58@icloud.com</p>
-                      </div>
-                    </div>
-                    
-                    
-                  </div>
-                  <div class="col-lg-4 text-center align-items-center">
-                    <img src="../assets/img/logo3.png" style="position: absolute;
-                    width: 387px;
-                    height: 36px;
-                    left: 760px;
-                    top: 47px;">
-                  </div>
-                  <div class="col-lg-4"></div>
+        <!-- Footer-->
+        <!-- <footer class="footer" style="background:#FFFFFF; position:absolute;width:1920px;height:218px;bottom:0px;left:0px;">
+  
+          <div class="row ">
+            <div class="col-lg-4">
+              <h4 style="position: absolute;
+              width: 97px;
+              height: 24px;
+              top:37px;
+              left:223px;
+              
+              font-family: 'Apple SD Gothic Neo';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 24px;
+              /* identical to box height */
+              
+              text-transform: capitalize;
+              
+              color: #000000;">Contact Us</h4>
+              <div class="row">
+                <div class="col-lg-4">
+                  <p style="position: absolute;
+                  width: 113px;
+                  height: 19px;
+                  top:83px;
+                  left:223px;
                   
-                 
+                  font-family: 'Apple SD Gothic Neo';
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 16px;
+                  line-height: 19px;
+                  text-transform: capitalize;
+                  
+                  color: #000000;">개발자 | 이예나</p> <br>
+                  <p style="position: absolute;
+                  width: 118px;
+                  height: 19px;
+                  left: 223px;
+                  top: 124px;
+                  
+                  font-family: 'Apple SD Gothic Neo';
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 16px;
+                  line-height: 19px;
+                  text-transform: capitalize;
+                  
+                  color: #000000;
+                  ">디자이너 | 이승원</p>
                 </div>
-                
-            </footer>
-  
+                <div class="col-lg-8">
+                  <p style="position: absolute;
+                  width: 180px;
+                  height: 24px;
+                  left: 379px;
+                  top: 83px;
+                  
+                  font-family: 'Apple SD Gothic Neo';
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 20px;
+                  line-height: 24px;
+                  /* identical to box height */
+                  
+                  text-transform: lowercase;
+                  
+                  color: #000000;">lmonari71@naver.com</p><br>
+                  <p style="position: absolute;
+                  width: 175px;
+                  height: 24px;
+                  left: 379px;
+                  top: 120px;
+                  
+                  font-family: 'Apple SD Gothic Neo';
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 20px;
+                  line-height: 24px;
+                  /* identical to box height */
+                  
+                  text-transform: lowercase;
+                  
+                  color: #000000;
+                  ">swlee58@icloud.com</p>
+                </div>
+              </div>
+              
+              
+            </div>
+            <div class="col-lg-4 text-center align-items-center">
+              <img src="../assets/img/logo3.png" style="position: absolute;
+              width: 387px;
+              height: 36px;
+              left: 760px;
+              top: 47px;">
+            </div>
+            <div class="col-lg-4"></div>
+            
+           
+          </div>
+        
+      </footer> -->
+
+   
+</div>
+               
       <script src="./js/data.js" charset="utf-8"></script>
       <script src="./js/start.js" charset="utf-8"></script>
       <script src="./js/share.js" charset="utf-8"></script>

@@ -48,21 +48,33 @@ function setResult(){
   var resultImg = document.createElement('img');
   const resultHashtagNum = 'hashtag' + (point+1);
   console.log("'" + resultHashtagNum + "'");
-  //const resultHashtag = document.querySelector("'" + resultHashtagNum + "'");
-  //document.getElementById("'" + resultHashtagNum + "'").innerHTML;
-  //document.querySelector("'#" + resultHashtagNum+"'").innerHTML;
   const imgDiv = document.querySelector('#resultImg');
   var imgURL = './img/image-' + point + '.jpg';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid2');
   imgDiv.appendChild(resultImg);
-  const resultDesc1 = document.querySelector('.resultDesc1');
-  resultDesc1.innerHTML = infoList[point].desc1;
-  const resultDesc2 = document.querySelector('.resultDesc2');
-  resultDesc2.innerHTML += infoList[point].desc2;
-  const resultDesc3 = document.querySelector('.resultDesc3');
-  resultDesc3.innerHTML += infoList[point].desc3;
+  const resultDesc = document.querySelector('.resultDesc');
+  resultDesc.innerHTML = infoList[point].desc1;
+  var testbtn = document.createElement('button');
+  testbtn.type = 'button';
+  testbtn.innerHTML = '더 알아보기';
+  testbtn.className = 'testbtn';
+  testbtn.addEventListener('click',e=>{
+    window.location = '../detail.html';
+  });
+  resultDesc.appendChild(testbtn);
+  var resetbtn = document.createElement('button');
+  resetbtn.type = 'button';  
+  resetbtn.src = '../assets/img/Frame.png';
+  resetbtn.className = 'resetbtn';
+  var resetImg = document.createElement('img');
+  resetImg.src = '../assets/img/Frame.png';
+  resetbtn.appendChild(resetImg);
+  resetbtn.addEventListener('click',e=>{
+    window.location = './test.html';
+  });
+  resultDesc.appendChild(resetbtn);
   return point+1;
 }
 function goResult(){
