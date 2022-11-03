@@ -1,125 +1,94 @@
-#result{
-  display:none;
-    background-color:#000;
-    /* text-align: center; */
-    /* border-radius: 20px;
+#result {
+  display: none;
+  background-color: #000;
+  /* text-align: center; */
+  /* border-radius: 20px;
     padding: 10% 10%; */
-  position:absolute;
+  position: absolute;
   left: 0px;
-  width:1920px;
-  height:2000px;
-  top:371px;
-  color:#FFFFFF;
- 
+  width: 1920px;
+  height: 2000px;
+  top: 240px;
+  color: #ffffff;
 }
-.resultname{
+.resultname {
   position: absolute;
-width: 969px;
-height: 48px;
-left: 475px;
-top: 0px;
-font-family: 'Apple SD Gothic Neo';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 48px;
-/* identical to box height */
+  width: 969px;
+  height: 48px;
+  left: 475px;
+  top: 0px;
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
 
-text-align: center;
-text-transform: lowercase;
+  text-align: center;
+  text-transform: lowercase;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
-#resultImg{
-
+#resultImg {
   position: absolute;
-width: 950px;
-height: 704px;
-left: 485px;
-top: 119px;
+  width: 480px;
+  height: 355px;
+  left: 720px;
+  top: 105px;
 }
-h1{
-  font-size:40px;
-  font-family: 'Apple SD Gothic Neo';
-  color: #FFFFFF;
+.img-fluid3 {
+  width: 480px;
+  height: 355.71px;
 }
-.s1{
-  color: #1FFF79;
-  font-family: 'Apple SD Gothic Neo';
+h1 {
+  font-size: 24px;
+  font-family: "Apple SD Gothic Neo";
+  color: #ffffff;
+}
+.s1 {
+  color: #1fff79;
+  font-family: "Apple SD Gothic Neo";
   font-style: normal;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 32px;
   line-height: 60px;
 }
 h2 {
-  font-family: 'Apple SD Gothic Neo';
+  font-family: "Apple SD Gothic Neo";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.resultDesc{
+.resultDesc {
   position: absolute;
-  width: 1427px;
+  width: 1200px;
   height: 136px;
-  left: 242px;
-  top: 900px;
+  left: 351px;
+  top: 541px;
   text-align: left;
-  font-family: 'Apple SD Gothic Neo';
+  font-family: "Apple SD Gothic Neo";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
   letter-spacing: -0.025em;
-  color: #FFFFFF;
-
-}
-.resultDesc1{
-
-  text-align: left;
-  font-family: 'Apple SD Gothic Neo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 34px;
-  letter-spacing: -0.025em;
-  color: #FFFFFF;
-}
-.resultDesc2{
-
-  text-align: left;
-  font-family: 'Apple SD Gothic Neo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 34px;
-  letter-spacing: -0.025em;
-  color: #FFFFFF;
-}
-.resultDesc3{
-  text-align: left;
-  font-family: 'Apple SD Gothic Neo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 34px;
-  letter-spacing: -0.025em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.testbtn{
-  background-color: #1FFF79;
+.testbtn {
+  background-color: #1fff79;
   border: 0px;
-  margin-top:81px;
+  margin-top: 80px;
   position: absolute;
   width: 200px;
-  height: 69.57px;
-  left:617px;
+  height: 80px;
+  left: 509px;
 
   text-align: center;
-  font-family: 'Apple SD Gothic Neo';
+  font-family: "Apple SD Gothic Neo";
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -128,20 +97,17 @@ h2 {
   text-transform: capitalize;
   border-radius: 10px;
   color: #000000;
-
-
 }
 
-.resetbtn{
+.resetbtn {
   position: absolute;
-width: 83px;
-height: 70px;
-left: 675px;
- margin-top:203px;
- background-color:#000;
- border:0;
- outline: 0;
-
+  width: 83px;
+  height: 70px;
+  left: 567px;
+  margin-top: 203px;
+  background-color: #000;
+  border: 0;
+  outline: 0;
 }
 
 /* .testbtn:hover{

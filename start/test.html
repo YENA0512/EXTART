@@ -1,205 +1,288 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="author" content="YenaLee">
-    <meta name="keywords" content="운동종목 추천테스트">
-    <meta name="description" content="운동종목 추천테스트">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="YenaLee" />
+    <meta name="keywords" content="운동종목 추천테스트" />
+    <meta name="description" content="운동종목 추천테스트" />
     <!--sns share-->
-    <meta property="og:url" content="https://meek-hummingbird0512.netlify.app" />
+    <meta
+      property="og:url"
+      content="https://meek-hummingbird0512.netlify.app"
+    />
     <meta property="og:title" content="운동종목 추천테스트" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./img/share.png" />
     <meta property="og:description" content="운동종목 추천테스트" />
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="../assets/icon2.png" >
+    <link rel="icon" type="image/x-icon" href="../assets/icon2.png" />
     <link rel="icon" type="image/x-icon" href="../assets/icon2.ico" />
 
     <title>EXTART - 운동종목 추천테스트</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <link href="../css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/qna.css">
-    <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="css/result.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/qna.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="css/result.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Serif+KR&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
-      Kakao.init('2d715fa0b8204a2159bbbd77643c8067');
-        Kakao.isInitialized();
+      Kakao.init("2d715fa0b8204a2159bbbd77643c8067");
+      Kakao.isInitialized();
     </script>
   </head>
-  <body style="position: relative;
-  width: 1920px;
-  height:1080px;
-  background: #FFFFFF;">
-    <div class="bannerimg" style="position: relative;
-    width: 1920px;
-   min-height:100%;
-    left: 0px;
-    top: 0px;
-    padding-bottom:218px;
-    background: #000000;">
-      <!-- Navigation-->
-      <div class="container-head1" style="position: absolute;
+  <body
+    style="
+      position: relative;
       width: 1920px;
-      height: 132px;
-      left: 0px;
-      top: 0px;">
-        <nav class="navbar navbar-expand navabar-expand-md navbar-expand-sm navbar-dark fixed-top" id="mainNav">
-          
-          <div class="navbar-brand" style="position: absolute;
-          width: 366px;
-          height: 34px;
-          left: 244px;
-          top: 99px;"><a href="../index.html"
-            ><img src="../assets/img/LOGO1.png" alt="..." style="position:absolute;top:0px;left:0px;width: 366px;
-            height: 34px;"
-          /></a></div>
-              
-          <div class="navbar" style="position:absolute;width:1194px;top: 110px; left:726px;text-align: center;" id="navbarResponsive">
-            <ul class="navbar-nav" style="position:absolute;width:1194px;top: 0px; left:0px;">
-              <li class="nav-item" style="position:absolute;left:0px;
-              ">
-                <a class="nav-link" href="../about.html" style="position: absolute;
-                width: 129px;
-                height: 28px;
-                color: #1FFF79;
-                display: flex;
-                align-items: center;
-                padding:0px;
-                text-align: center;">서비스 소개</a>
+      height: 1080px;
+      background: #ffffff;
+    "
+  >
+    <div
+      class="bannerimg"
+      style="
+        position: relative;
+        width: 1920px;
+        min-height: 100%;
+        left: 0px;
+        top: 0px;
+        padding-bottom: 218px;
+        background: #000000;
+      "
+    >
+      <!-- Navigation-->
+      <div
+        class="container-head1"
+        style="
+          position: absolute;
+          width: 1200px;
+          height: 132px;
+          /* left: 360px; */
+          margin: 0 auto;
+          text-align: center;
+          align-items: center;
+          top: 0px;
+        "
+      >
+        <nav
+          class="navbar navbar-expand navabar-expand-md navbar-expand-sm navbar-dark fixed-top"
+          id="mainNav"
+        >
+          <div
+            class="navbar-brand"
+            style="
+              position: absolute;
+              width: 364px;
+              height: 34px;
+              left: 0px;
+              top: 99px;
+            "
+          >
+            <a href="../index.html"
+              ><img
+                src="../assets/img/LOGO1.png"
+                alt="..."
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 366px;
+                  height: 34px;
+                "
+            /></a>
+          </div>
+
+          <div
+            class="navbar"
+            style="
+              position: absolute;
+              width: 720px;
+              top: 110px;
+              left: 467.7px;
+              text-align: center;
+            "
+            id="navbarResponsive"
+          >
+            <ul
+              class="navbar-nav"
+              style="position: absolute; width: 720px; top: 0px; left: 0px"
+            >
+              <li class="nav-item" style="position: absolute; left: 0px">
+                <a
+                  class="nav-link"
+                  href="../about.html"
+                  style="
+                    position: absolute;
+                    width: 180px;
+                    height: 28px;
+                    padding: 0px;
+                    color: #1fff79;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                  "
+                  >서비스 소개</a
+                >
               </li>
-              <li class="nav-item" style="position:absolute;left:252px;
-              ">
-                <a class="nav-link" href="../start/test.html" style="position: absolute;
-                width: 153px;
-                height: 28px;
-                padding:0px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                
-                color: #1FFF79">운동 추천받기</a></li>
-              <li class="nav-item" style="position:absolute;left:528px;
-              ">
-                <a class="nav-link" href="../detail.html" style="position: absolute;
-                width: 153px;
-                height: 28px;
-                padding:0px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                
-                color: #1FFF79;">운동 알아보기</a>
+              <li class="nav-item" style="position: absolute; left: 180px">
+                <a
+                  class="nav-link"
+                  href="../start/test.html"
+                  style="
+                    position: absolute;
+                    width: 1153px;
+                    height: 28px;
+                    padding: 0px;
+
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+
+                    color: #1fff79;
+                  "
+                  >운동 추천받기</a
+                >
               </li>
-              <li class="nav-item" style="position:absolute;left:804px;
-              ">
-                <a class="nav-link" href="../geolocation.html" style="position: absolute;
-                width: 153px;
-                height: 28px;
-                padding:0px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                
-                color: #1FFF79;">시설 알아보기</a>
+              <li class="nav-item" style="position: absolute; left: 360px">
+                <a
+                  class="nav-link"
+                  href="../detail.html"
+                  style="
+                    position: absolute;
+                    width: 153px;
+                    height: 28px;
+                    padding: 0px;
+
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+
+                    color: #1fff79;
+                  "
+                  >운동 알아보기</a
+                >
+              </li>
+              <li class="nav-item" style="position: absolute; left: 540px">
+                <a
+                  class="nav-link"
+                  href="../geolocation.html"
+                  style="
+                    position: absolute;
+                    width: 153px;
+                    height: 28px;
+                    padding: 0px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+
+                    color: #1fff79;
+                  "
+                  >시설 알아보기</a
+                >
               </li>
             </ul>
           </div>
-        
         </nav>
       </div>
-    
-       
-    <div id="bodywrapper" style="min-height:100%;
-    position:relative;
-    padding-bottom:218px;">
-      <div id="body-content">
-        
-      
 
-      <section id="main" class="page-section">
-        
-          <div class="text-center test">
-              <h2 style="position: absolute;
-              left: 45.47%;
-              right: 45.47%;
-              top: 25.93%;
-              bottom: 70.19%;
-              
-              font-family: 'Shilla_Gothic-Bold';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 32px;
-              line-height: 42px;
-              text-align: center;
-              text-transform: capitalize;
-              
-              color: #FFFFFF;">운동 추천받기</h2>
-              <h1 style="position: absolute;
-              left: 31.67%;
-              right: 31.67%;
-              top: 32.04%;
-              bottom: 61.85%;
-              
-              font-family: 'Shilla_Gothic-Bold';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 50px;
-              line-height: 66px;
-              text-align: center;
-              letter-spacing: 0.02em;
-              text-transform: capitalize;
-              
-              color: #1FFF79;">나에게 맞는 운동 종목은 무엇일까?</h1>
+      <div
+        id="bodywrapper"
+        style="min-height: 100%; position: relative; padding-bottom: 218px"
+      >
+        <div id="body-content">
+          <section id="main" class="page-section">
+            <div class="text-center test">
+              <h2
+                style="
+                  position: absolute;
+                  left: 45.47%;
+                  right: 45.47%;
+                  top: 25.93%;
+                  bottom: 70.19%;
 
-              <img src="../assets/testimg.png" style="position: absolute;
-              width: 500px;
-              height: 500px;
-              left: 710px;
-              top: 382px;">
-              
-              
-              <button class="btn-xl btn stbtn" onclick="js:begin()">시작하기</button>
+                  font-family: 'Shilla_Gothic-Bold';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 28px;
+                  line-height: 42px;
+                  text-align: center;
+                  text-transform: capitalize;
 
-            
-          </div>
+                  color: #ffffff;
+                "
+              >
+                운동 추천받기
+              </h2>
+              <h1
+                style="
+                  position: absolute;
+                  left: 31.67%;
+                  right: 31.67%;
+                  top: 32.04%;
+                  bottom: 61.85%;
 
-          
-      
-      </section>
+                  font-family: 'Shilla_Gothic-Bold';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 40px;
+                  line-height: 66px;
+                  text-align: center;
+                  letter-spacing: 0.02em;
+                  text-transform: capitalize;
 
+                  color: #1fff79;
+                "
+              >
+                나에게 맞는 운동 종목은 무엇일까?
+              </h1>
 
-      <section id="qna" class="page-section">
+              <img
+                src="../assets/testimg.png"
+                style="
+                  position: absolute;
+                  width: 500px;
+                  height: 500px;
+                  left: 710px;
+                  top: 382px;
+                "
+              />
 
-          
-              <div class="qBox text-center">
-              </div>
-              <div class="answerBox">
-    
-              
-          </div>
+              <button class="btn-xl btn stbtn" onclick="js:begin()">
+                시작하기
+              </button>
+            </div>
+          </section>
 
-      </section>
+          <section id="qna" class="page-section">
+            <div class="qBox text-center"></div>
+            <div class="answerBox"></div>
+          </section>
 
-      <section id="result" class="page-section">
-        <!-- <div class="container-head2 mt-5 pt-5">-->
-          <div class="text-center">
-             
-              <div class="resultname">
-
-              </div>
-              <div id="resultImg">
-
-              </div>
+          <section id="result" class="page-section">
+            <!-- <div class="container-head2 mt-5 pt-5">-->
+            <div class="text-center">
+              <div class="resultname"></div>
+              <div id="resultImg"></div>
               <div class="resultDesc">
-              <!-- <div class="resultDesc1">
+                <!-- <div class="resultDesc1">
               </div> 
               <div class="resultDesc2">
                 <br>
@@ -207,20 +290,33 @@
               <div class="resultDesc3">
                 <br>
               </div>  -->
-              <br>
-             
-            <button type="button" id="pageMove" onclick="location.href='../detail.html'" class="testbtn text-center py-2 px-3 mx-1">더 알아보기</button>
-            <br>
-            <button type="button" onclick="location.href='test.html'" class="resetbtn"><img src="../assets/img/Frame.png"></button>
-          </div>
-<!-- 
+                <br />
+
+                <button
+                  type="button"
+                  id="pageMove"
+                  onclick="location.href='../detail.html'"
+                  class="testbtn text-center py-2 px-3 mx-1"
+                >
+                  더 알아보기
+                </button>
+                <br />
+                <button
+                  type="button"
+                  onclick="location.href='test.html'"
+                  class="resetbtn"
+                >
+                  <img src="../assets/img/Frame.png" />
+                </button>
+              </div>
+              <!-- 
           </div>-->
-        </div> 
-      </section>
-    </div>
-  
-        <!-- Footer-->
-        <!-- <footer class="footer" style="background:#FFFFFF; position:absolute;width:1920px;height:218px;bottom:0px;left:0px;">
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Footer-->
+      <!-- <footer class="footer" style="background:#FFFFFF; position:absolute;width:1920px;height:218px;bottom:0px;left:0px;">
   
           <div class="row ">
             <div class="col-lg-4">
@@ -324,14 +420,10 @@
           </div>
         
       </footer> -->
+    </div>
 
-   
-</div>
-               
-      <script src="./js/data.js" charset="utf-8"></script>
-      <script src="./js/start.js" charset="utf-8"></script>
-      <script src="./js/share.js" charset="utf-8"></script>
-     
-
+    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
   </body>
 </html>

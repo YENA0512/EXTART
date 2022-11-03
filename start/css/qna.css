@@ -1,48 +1,46 @@
-#qna{
-  display:none;
+#qna {
+  display: none;
 }
 
-.qBox{
-position: absolute;
-width: 575px;
-height: 34px;
-left: 687px;
-top: 330px;
-display: block;
-font-family: 'Apple SD Gothic Neo';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 43px;
-align-items: center;
-text-align: center;
-letter-spacing: -0.025em;
-text-transform: lowercase;
-color: #1FFF79;
-
-}
-
- .answerBox{
-  position:absolute;
-  margin-top:440px;
-  margin-left:646px;
-  display:block;
-  align-items: center;
-  text-align: center; 
-} 
-
-.answerList{
-  
-  background: #000;
-  border: 1.5px solid #FFFFFF;
-  border-radius: 10px;
-  box-sizing: border-box;
-  width:627px;
-  height:80px;
-  font-family: 'Apple SD Gothic Neo';
+.qBox {
+  position: absolute;
+  width: 575px;
+  height: 34px;
+  left: 679px;
+  top: 330px;
+  display: block;
+  font-family: "Apple SD Gothic Neo";
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 25px;
+  line-height: 43px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.025em;
+  text-transform: lowercase;
+  color: #1fff79;
+}
+
+.answerBox {
+  position: absolute;
+  margin-top: 440px;
+  margin-left: 691px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.answerList {
+  background: #000;
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 540px;
+  height: 60px;
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
   line-height: 34px;
   /* identical to box height */
 
@@ -50,12 +48,12 @@ color: #1FFF79;
   align-items: center;
   text-align: center;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-
-.answerList:hover, .answerList:focus{
-  background-color: #1FFF79;
-  color:#000;
+.answerList:hover,
+.answerList:focus {
+  background-color: #1fff79;
+  color: #000;
   border: 0;
 }
